@@ -1,10 +1,10 @@
 ## Generador de Archivo ARFF
 
-Programa en Java que genera un Archivo ARFF en el cual se simulan los partidos de liga de Béisbol entre los meses abril a octubre (4 - 9), siendo el esquema del archivo el siguiente:
+Programa en Java que genera un Archivo ARFF en el cual se simulan los partidos de liga de Béisbol entre los meses abril a octubre (4 - 10), siendo el esquema del archivo el siguiente:
 
 | Atributos          | Tipo de datos | Valores             |
 |--------------------|---------------|---------------------|
-| Mes                | Numérico      | 4-9                 |
+| Mes                | Numérico      | 4-10                 |
 | Día                | Numérico      | 1-30                |
 | Liga               | Nominal       | Nacional, Americana |
 | Equipo local       | Nominal       | Se define abajo     |
