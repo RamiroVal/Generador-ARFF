@@ -1,5 +1,8 @@
 package codigo;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -11,24 +14,31 @@ public class Principal {
 
 	private ArrayList<String> eqNacional;
 	private ArrayList<String> eqAmericana;
+	private ArrayList<String> eq1;
+	private ArrayList<String> eq2;
 	private ArrayList<Attribute> atributos;
 	private ArrayList<String> ligas;
-	private ArrayList<String> equipos;
+	// private ArrayList<String> equipos;
 	private ArrayList<String> ganadores;
 	private Instances datos;
 
 	public Principal(ArrayList<String> eqNacional, ArrayList<String> eqAmericana) {
 		this.eqNacional = eqNacional;
 		this.eqAmericana = eqAmericana;
+		
+		eq1 = new ArrayList<>();
+		eq2 = new ArrayList<>();
+		eq1.addAll(eqNacional);
+		eq2.addAll(eqAmericana);
 
-		equipos = new ArrayList<>();
-		equipos.addAll(eqNacional);
-		equipos.addAll(eqAmericana);
+		// equipos = new ArrayList<>();
+		// equipos.addAll(eqNacional);
+		// equipos.addAll(eqAmericana);
 
 		ganadores = new ArrayList<>();
 		ganadores.addAll(eqNacional);
 		ganadores.addAll(eqAmericana);
-		ganadores.add("Empate");
+		// ganadores.add("Empate");
 		
 		ligas = new ArrayList<>();
 		ligas.add("Nacional");
@@ -36,33 +46,29 @@ public class Principal {
 		
 		creaAtributos();
 		generaDatos();
+		creaArchivo();
 
 	}
 
-	private int calculaCarreras() {
-		double aux = Math.random();
-		if(aux < 0.09){
-			return 0;
-		}else if(aux < 0.18) {
-			return 1;
-		}else if(aux < 0.27) {
-			return 2;
-		}else if(aux < 0.36) {
-			return 3;
-		}else if(aux < 0.45) {
-			return 4;
-		}else if(aux < 0.54) {
-			return 5;
-		}else if(aux < 0.63) {
-			return 6;
-		}else if(aux < 0.72) {
-			return 7;
-		}else if(aux < 0.81) {
-			return 8;
-		}else if(aux < 0.90) {
-			return 9;
+	private void creaArchivo() {
+		try {
+			String arch = "archivos/PartidosBeis.arff";
+
+			File file = new File(arch);
+
+			if(!file.exists()) {
+				file.createNewFile();
+			}
+
+			FileWriter fw = new FileWriter(file);
+			BufferedWriter bw = new BufferedWriter(fw);
+			bw.write(datos.toString());
+			bw.close();
+			System.out.println("Archivo creado con éxito.");
+		}catch(Exception e){
+			System.err.println("Hubo un error.");
+			e.printStackTrace();
 		}
-		return 10;
 	}
 
 	private void generaDatos() {
@@ -75,37 +81,41 @@ public class Principal {
 				if (descanso == 4) {descanso = 1; bandera = (bandera) ? false : true; continue;}
 
 				// Reordena los Arrays de los equipos
-				Collections.shuffle(eqNacional);
-                Collections.shuffle(eqAmericana);
+				Collections.shuffle(eq1);
+                Collections.shuffle(eq2);
 
 				for(int h = 0; h < eqNacional.size(); h++) {
-					int carrNacional = calculaCarreras();
-					int carrAmericana = calculaCarreras();
+					int carrNacional, carrAmericana = carrNacional = 0;
+
+					while(carrNacional == carrAmericana) {
+						carrNacional = (int)(Math.random() * 11);
+						carrAmericana = (int)(Math.random() * 11);
+					}
 
 					double[] valores = new double[datos.numAttributes()];
 
 					valores[0] = j;
 					valores[1] = i;
+					valores[3] = eqNacional.indexOf(eq1.get(h));
+					valores[4] = eqAmericana.indexOf(eq2.get(h));
+					valores[6] = carrNacional;
+					valores[7] = carrAmericana;
 					if(bandera) {
 						valores[2] = ligas.indexOf("Americana");
-						valores[3] = equipos.indexOf(eqAmericana.get(h));
-						valores[4] = equipos.indexOf(eqNacional.get(h));
-						valores[6] = carrAmericana;
-						valores[7] = carrNacional;
+						/*valores[3] = equipos.indexOf(eqAmericana.get(h));
+						valores[4] = equipos.indexOf(eqNacional.get(h));*/
 					}else {
 						valores[2] = ligas.indexOf("Nacional");
-						valores[3] = equipos.indexOf(eqNacional.get(h));
-						valores[4] = equipos.indexOf(eqAmericana.get(h));
-						valores[6] = carrNacional;
-						valores[7] = carrAmericana;
+						/*valores[3] = equipos.indexOf(eqNacional.get(h));
+						valores[4] = equipos.indexOf(eqAmericana.get(h));*/
 					}
 
-					if(carrNacional == carrAmericana) {
-						valores[5] = ganadores.indexOf("Empate");
-					}else if(carrNacional > carrAmericana) {
-						valores[5] = ganadores.indexOf(eqNacional.get(h));
+					if(carrNacional > carrAmericana) {
+						valores[5] = ganadores.indexOf(eq1.get(h));
+						// System.out.println("Equipo ganador " + eq1.get(h));
 					}else {
-						valores[5] = ganadores.indexOf(eqAmericana.get(h));
+						valores[5] = ganadores.indexOf(eq2.get(h));
+						// System.out.println("Equipo ganador " + eq2.get(h));
 					}
 
 					datos.add(new DenseInstance(1.0, valores));
@@ -113,7 +123,7 @@ public class Principal {
 				descanso++;
 			}
 		}
-		System.out.println(datos.toString());
+		// System.out.println(datos.toString());
 	}
 
 	private void creaAtributos() {
@@ -121,11 +131,13 @@ public class Principal {
 		atributos.add(new Attribute("Dia"));
 		atributos.add(new Attribute("Mes"));
 		atributos.add(new Attribute("Liga", ligas));
-		atributos.add(new Attribute("Local", equipos));
-		atributos.add(new Attribute("Visitante", equipos));
+		// atributos.add(new Attribute("Local", equipos));
+		// atributos.add(new Attribute("Visitante", equipos));
+		atributos.add(new Attribute("Equipo 1", eqNacional));
+		atributos.add(new Attribute("Equipo 2", eqAmericana));
 		atributos.add(new Attribute("Ganador", ganadores));
-		atributos.add(new Attribute("CarreraLocal"));
-		atributos.add(new Attribute("CarreraVisita"));
+		atributos.add(new Attribute("Carrera Equipo 1"));
+		atributos.add(new Attribute("Carrera Equipo 2"));
 
 		datos = new Instances("PartidosBeis", atributos, 0);
 	}
