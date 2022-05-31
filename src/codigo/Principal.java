@@ -14,8 +14,6 @@ public class Principal {
 
 	private ArrayList<String> eqNacional;
 	private ArrayList<String> eqAmericana;
-	private ArrayList<String> eq1;
-	private ArrayList<String> eq2;
 	private ArrayList<Attribute> atributos;
 	private ArrayList<String> ligas;
 	// private ArrayList<String> equipos;
@@ -25,11 +23,6 @@ public class Principal {
 	public Principal(ArrayList<String> eqNacional, ArrayList<String> eqAmericana) {
 		this.eqNacional = eqNacional;
 		this.eqAmericana = eqAmericana;
-		
-		eq1 = new ArrayList<>();
-		eq2 = new ArrayList<>();
-		eq1.addAll(eqNacional);
-		eq2.addAll(eqAmericana);
 
 		// equipos = new ArrayList<>();
 		// equipos.addAll(eqNacional);
@@ -73,6 +66,11 @@ public class Principal {
 
 	private void generaDatos() {
 		int descanso = 1;
+		ArrayList<String> eq1 = new ArrayList<>();
+		ArrayList<String> eq2 = new ArrayList<>();
+		eq1.addAll(eqNacional);
+		eq2.addAll(eqAmericana);
+
 		for(int i = 4; i < 11; i++) {
 			int dias = (i == 4 || i == 6 || i == 9) ? 30 : 31;
 
