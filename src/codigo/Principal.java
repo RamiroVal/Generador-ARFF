@@ -16,7 +16,6 @@ public class Principal {
 	private ArrayList<String> eqAmericana;
 	private ArrayList<Attribute> atributos;
 	private ArrayList<String> ligas;
-	// private ArrayList<String> equipos;
 	private ArrayList<String> ganadores;
 	private Instances datos;
 
@@ -24,14 +23,9 @@ public class Principal {
 		this.eqNacional = eqNacional;
 		this.eqAmericana = eqAmericana;
 
-		// equipos = new ArrayList<>();
-		// equipos.addAll(eqNacional);
-		// equipos.addAll(eqAmericana);
-
 		ganadores = new ArrayList<>();
 		ganadores.addAll(eqNacional);
 		ganadores.addAll(eqAmericana);
-		// ganadores.add("Empate");
 		
 		ligas = new ArrayList<>();
 		ligas.add("Nacional");
@@ -89,39 +83,21 @@ public class Principal {
 						carrNacional = (int)(Math.random() * 11);
 						carrAmericana = (int)(Math.random() * 11);
 					}
-
 					double[] valores = new double[datos.numAttributes()];
-
 					valores[0] = j;
 					valores[1] = i;
+					valores[2] = (bandera) ? ligas.indexOf("Americana") : ligas.indexOf("Nacional");
 					valores[3] = eqNacional.indexOf(eq1.get(h));
 					valores[4] = eqAmericana.indexOf(eq2.get(h));
+					valores[5] = (carrNacional > carrAmericana) ? ganadores.indexOf(eq1.get(h)) : ganadores.indexOf(eq2.get(h));
 					valores[6] = carrNacional;
 					valores[7] = carrAmericana;
-					if(bandera) {
-						valores[2] = ligas.indexOf("Americana");
-						/*valores[3] = equipos.indexOf(eqAmericana.get(h));
-						valores[4] = equipos.indexOf(eqNacional.get(h));*/
-					}else {
-						valores[2] = ligas.indexOf("Nacional");
-						/*valores[3] = equipos.indexOf(eqNacional.get(h));
-						valores[4] = equipos.indexOf(eqAmericana.get(h));*/
-					}
-
-					if(carrNacional > carrAmericana) {
-						valores[5] = ganadores.indexOf(eq1.get(h));
-						// System.out.println("Equipo ganador " + eq1.get(h));
-					}else {
-						valores[5] = ganadores.indexOf(eq2.get(h));
-						// System.out.println("Equipo ganador " + eq2.get(h));
-					}
 
 					datos.add(new DenseInstance(1.0, valores));
 				}
 				descanso++;
 			}
 		}
-		// System.out.println(datos.toString());
 	}
 
 	private void creaAtributos() {
@@ -129,8 +105,6 @@ public class Principal {
 		atributos.add(new Attribute("Dia"));
 		atributos.add(new Attribute("Mes"));
 		atributos.add(new Attribute("Liga", ligas));
-		// atributos.add(new Attribute("Local", equipos));
-		// atributos.add(new Attribute("Visitante", equipos));
 		atributos.add(new Attribute("Equipo 1", eqNacional));
 		atributos.add(new Attribute("Equipo 2", eqAmericana));
 		atributos.add(new Attribute("Ganador", ganadores));
@@ -147,14 +121,14 @@ public class Principal {
         eNacional.add("Dodgers");
         eNacional.add("Bravos");
         eNacional.add("Cardenales");
-        eNacional.add("Gigantes");
-        eNacional.add("Cachorros");
+        //eNacional.add("Gigantes");
+        //eNacional.add("Cachorros");
 
         eAmericana.add("Yankees");
         eAmericana.add("Astros");
         eAmericana.add("Piratas");
-        eAmericana.add("Medias rojas");
-        eAmericana.add("Cerveceros");
+        //eAmericana.add("Medias rojas");
+        //eAmericana.add("Cerveceros");
 
 		new Principal(eNacional, eAmericana);
 	}

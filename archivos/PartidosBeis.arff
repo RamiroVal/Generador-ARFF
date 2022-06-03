@@ -3,815 +3,493 @@
 @attribute Dia numeric
 @attribute Mes numeric
 @attribute Liga {Nacional,Americana}
-@attribute 'Equipo 1' {Dodgers,Bravos,Cardenales,Gigantes,Cachorros}
-@attribute 'Equipo 2' {Yankees,Astros,Piratas,'Medias rojas',Cerveceros}
-@attribute Ganador {Dodgers,Bravos,Cardenales,Gigantes,Cachorros,Yankees,Astros,Piratas,'Medias rojas',Cerveceros}
+@attribute 'Equipo 1' {Dodgers,Bravos,Cardenales}
+@attribute 'Equipo 2' {Yankees,Astros,Piratas}
+@attribute Ganador {Dodgers,Bravos,Cardenales,Yankees,Astros,Piratas}
 @attribute 'Carrera Equipo 1' numeric
 @attribute 'Carrera Equipo 2' numeric
 
 @data
-1,4,Nacional,Cardenales,Piratas,Cardenales,6,5
-1,4,Nacional,Cachorros,Yankees,Yankees,9,10
-1,4,Nacional,Gigantes,'Medias rojas',Gigantes,9,6
-1,4,Nacional,Bravos,Cerveceros,Cerveceros,4,7
-1,4,Nacional,Dodgers,Astros,Astros,2,3
-2,4,Nacional,Dodgers,Yankees,Dodgers,5,4
-2,4,Nacional,Bravos,Cerveceros,Bravos,9,1
-2,4,Nacional,Gigantes,Astros,Gigantes,2,1
-2,4,Nacional,Cardenales,Piratas,Cardenales,10,8
-2,4,Nacional,Cachorros,'Medias rojas',Cachorros,10,4
-3,4,Nacional,Gigantes,Yankees,Gigantes,8,1
-3,4,Nacional,Cachorros,'Medias rojas',Cachorros,9,4
-3,4,Nacional,Cardenales,Cerveceros,Cerveceros,4,7
-3,4,Nacional,Dodgers,Piratas,Dodgers,7,0
-3,4,Nacional,Bravos,Astros,Astros,6,8
-5,4,Americana,Gigantes,Cerveceros,Cerveceros,0,1
-5,4,Americana,Cachorros,Yankees,Cachorros,7,3
-5,4,Americana,Dodgers,'Medias rojas',Dodgers,6,5
-5,4,Americana,Bravos,Astros,Bravos,9,8
-5,4,Americana,Cardenales,Piratas,Cardenales,7,2
-6,4,Americana,Cachorros,'Medias rojas','Medias rojas',0,4
-6,4,Americana,Gigantes,Piratas,Gigantes,9,6
-6,4,Americana,Cardenales,Cerveceros,Cardenales,10,4
-6,4,Americana,Bravos,Yankees,Bravos,8,2
-6,4,Americana,Dodgers,Astros,Dodgers,6,2
-7,4,Americana,Bravos,Yankees,Bravos,8,5
-7,4,Americana,Dodgers,'Medias rojas',Dodgers,10,7
-7,4,Americana,Cachorros,Cerveceros,Cerveceros,2,3
-7,4,Americana,Cardenales,Piratas,Piratas,3,8
-7,4,Americana,Gigantes,Astros,Astros,2,8
-9,4,Nacional,Bravos,Astros,Astros,0,4
-9,4,Nacional,Cardenales,Yankees,Cardenales,8,0
-9,4,Nacional,Cachorros,Piratas,Piratas,5,10
-9,4,Nacional,Dodgers,'Medias rojas',Dodgers,4,1
-9,4,Nacional,Gigantes,Cerveceros,Gigantes,10,3
-10,4,Nacional,Dodgers,Cerveceros,Cerveceros,1,9
-10,4,Nacional,Cardenales,Yankees,Cardenales,10,6
-10,4,Nacional,Gigantes,Piratas,Piratas,6,8
-10,4,Nacional,Cachorros,'Medias rojas',Cachorros,8,4
-10,4,Nacional,Bravos,Astros,Bravos,5,3
-11,4,Nacional,Gigantes,Astros,Astros,1,5
-11,4,Nacional,Cardenales,Yankees,Yankees,1,5
-11,4,Nacional,Cachorros,Cerveceros,Cachorros,9,3
-11,4,Nacional,Dodgers,'Medias rojas',Dodgers,10,7
-11,4,Nacional,Bravos,Piratas,Bravos,9,4
-13,4,Americana,Bravos,Astros,Bravos,9,0
-13,4,Americana,Cardenales,Cerveceros,Cardenales,8,7
-13,4,Americana,Dodgers,Yankees,Dodgers,3,1
-13,4,Americana,Cachorros,Piratas,Piratas,6,9
-13,4,Americana,Gigantes,'Medias rojas',Gigantes,7,6
-14,4,Americana,Gigantes,Piratas,Piratas,8,9
-14,4,Americana,Cardenales,Yankees,Yankees,6,10
-14,4,Americana,Dodgers,Cerveceros,Dodgers,2,1
-14,4,Americana,Bravos,Astros,Bravos,5,3
-14,4,Americana,Cachorros,'Medias rojas',Cachorros,8,6
-15,4,Americana,Dodgers,Yankees,Yankees,1,8
-15,4,Americana,Cachorros,Astros,Cachorros,6,3
-15,4,Americana,Bravos,Piratas,Bravos,10,9
-15,4,Americana,Gigantes,Cerveceros,Cerveceros,0,8
-15,4,Americana,Cardenales,'Medias rojas','Medias rojas',5,9
-17,4,Nacional,Cardenales,'Medias rojas',Cardenales,4,1
-17,4,Nacional,Bravos,Astros,Astros,1,6
-17,4,Nacional,Cachorros,Yankees,Yankees,0,10
-17,4,Nacional,Gigantes,Piratas,Gigantes,7,3
-17,4,Nacional,Dodgers,Cerveceros,Dodgers,7,3
-18,4,Nacional,Gigantes,Yankees,Yankees,3,7
-18,4,Nacional,Bravos,Cerveceros,Cerveceros,3,8
-18,4,Nacional,Cachorros,Astros,Cachorros,9,2
-18,4,Nacional,Cardenales,Piratas,Piratas,2,4
-18,4,Nacional,Dodgers,'Medias rojas','Medias rojas',3,5
-19,4,Nacional,Cachorros,'Medias rojas',Cachorros,9,5
-19,4,Nacional,Cardenales,Astros,Astros,6,10
-19,4,Nacional,Gigantes,Piratas,Piratas,8,10
-19,4,Nacional,Dodgers,Yankees,Yankees,4,7
-19,4,Nacional,Bravos,Cerveceros,Cerveceros,2,9
-21,4,Americana,Cachorros,Astros,Astros,3,4
-21,4,Americana,Gigantes,'Medias rojas',Gigantes,6,2
-21,4,Americana,Dodgers,Yankees,Yankees,0,8
-21,4,Americana,Bravos,Piratas,Bravos,4,2
-21,4,Americana,Cardenales,Cerveceros,Cerveceros,0,7
-22,4,Americana,Gigantes,Cerveceros,Cerveceros,8,9
-22,4,Americana,Cachorros,Yankees,Cachorros,6,0
-22,4,Americana,Bravos,'Medias rojas',Bravos,5,4
-22,4,Americana,Cardenales,Astros,Astros,0,5
-22,4,Americana,Dodgers,Piratas,Piratas,1,6
-23,4,Americana,Bravos,Cerveceros,Bravos,10,8
-23,4,Americana,Gigantes,'Medias rojas',Gigantes,4,1
-23,4,Americana,Dodgers,Piratas,Dodgers,10,6
-23,4,Americana,Cachorros,Yankees,Cachorros,5,2
-23,4,Americana,Cardenales,Astros,Cardenales,10,2
-25,4,Nacional,Cardenales,'Medias rojas','Medias rojas',1,3
-25,4,Nacional,Cachorros,Piratas,Piratas,0,2
-25,4,Nacional,Gigantes,Cerveceros,Gigantes,3,2
-25,4,Nacional,Dodgers,Astros,Astros,0,6
-25,4,Nacional,Bravos,Yankees,Bravos,6,4
-26,4,Nacional,Bravos,Astros,Bravos,3,0
-26,4,Nacional,Gigantes,Cerveceros,Gigantes,8,7
-26,4,Nacional,Cachorros,Piratas,Piratas,5,7
-26,4,Nacional,Dodgers,Yankees,Dodgers,8,0
-26,4,Nacional,Cardenales,'Medias rojas','Medias rojas',0,10
-27,4,Nacional,Bravos,Cerveceros,Cerveceros,3,5
-27,4,Nacional,Gigantes,Astros,Gigantes,9,5
-27,4,Nacional,Cardenales,Piratas,Cardenales,9,0
-27,4,Nacional,Cachorros,Yankees,Cachorros,9,4
-27,4,Nacional,Dodgers,'Medias rojas','Medias rojas',4,10
-29,4,Americana,Dodgers,'Medias rojas',Dodgers,10,3
-29,4,Americana,Gigantes,Astros,Gigantes,3,0
-29,4,Americana,Cardenales,Cerveceros,Cardenales,3,1
-29,4,Americana,Bravos,Yankees,Bravos,8,6
-29,4,Americana,Cachorros,Piratas,Cachorros,8,4
-30,4,Americana,Dodgers,Piratas,Piratas,7,8
-30,4,Americana,Gigantes,'Medias rojas',Gigantes,10,3
-30,4,Americana,Cardenales,Cerveceros,Cardenales,7,3
-30,4,Americana,Bravos,Astros,Astros,1,8
-30,4,Americana,Cachorros,Yankees,Yankees,3,5
-1,5,Nacional,Bravos,Astros,Bravos,5,3
-1,5,Nacional,Gigantes,Yankees,Gigantes,1,0
-1,5,Nacional,Dodgers,Piratas,Piratas,1,10
-1,5,Nacional,Cachorros,'Medias rojas','Medias rojas',2,7
-1,5,Nacional,Cardenales,Cerveceros,Cardenales,2,0
-3,5,Americana,Dodgers,Cerveceros,Dodgers,2,1
-3,5,Americana,Gigantes,Astros,Gigantes,9,5
-3,5,Americana,Cardenales,Yankees,Cardenales,7,6
-3,5,Americana,Cachorros,'Medias rojas','Medias rojas',2,7
-3,5,Americana,Bravos,Piratas,Piratas,1,10
-4,5,Americana,Bravos,Yankees,Yankees,0,7
-4,5,Americana,Dodgers,'Medias rojas',Dodgers,10,5
-4,5,Americana,Gigantes,Cerveceros,Gigantes,10,4
-4,5,Americana,Cardenales,Astros,Cardenales,9,8
-4,5,Americana,Cachorros,Piratas,Cachorros,2,1
-5,5,Americana,Gigantes,Piratas,Gigantes,5,3
-5,5,Americana,Cardenales,'Medias rojas',Cardenales,1,0
-5,5,Americana,Dodgers,Yankees,Dodgers,9,5
-5,5,Americana,Cachorros,Cerveceros,Cachorros,10,8
-5,5,Americana,Bravos,Astros,Bravos,9,6
-7,5,Nacional,Dodgers,Yankees,Yankees,2,10
-7,5,Nacional,Gigantes,Piratas,Gigantes,5,4
-7,5,Nacional,Cardenales,Astros,Astros,2,6
-7,5,Nacional,Bravos,Cerveceros,Cerveceros,8,10
-7,5,Nacional,Cachorros,'Medias rojas',Cachorros,7,0
-8,5,Nacional,Bravos,'Medias rojas','Medias rojas',8,9
-8,5,Nacional,Dodgers,Cerveceros,Cerveceros,2,5
-8,5,Nacional,Cardenales,Astros,Cardenales,8,3
-8,5,Nacional,Cachorros,Yankees,Cachorros,5,1
-8,5,Nacional,Gigantes,Piratas,Gigantes,10,0
-9,5,Nacional,Bravos,Cerveceros,Cerveceros,2,4
-9,5,Nacional,Cardenales,Astros,Astros,4,10
-9,5,Nacional,Dodgers,'Medias rojas',Dodgers,5,4
-9,5,Nacional,Cachorros,Piratas,Piratas,2,5
-9,5,Nacional,Gigantes,Yankees,Yankees,1,4
-11,5,Americana,Cachorros,Astros,Cachorros,7,4
-11,5,Americana,Gigantes,Cerveceros,Gigantes,4,1
-11,5,Americana,Dodgers,'Medias rojas',Dodgers,8,1
-11,5,Americana,Cardenales,Yankees,Yankees,5,7
-11,5,Americana,Bravos,Piratas,Piratas,3,4
-12,5,Americana,Cardenales,'Medias rojas',Cardenales,3,0
-12,5,Americana,Gigantes,Yankees,Yankees,4,7
-12,5,Americana,Dodgers,Cerveceros,Dodgers,7,2
-12,5,Americana,Bravos,Piratas,Piratas,8,10
-12,5,Americana,Cachorros,Astros,Cachorros,4,2
-13,5,Americana,Gigantes,Astros,Astros,3,7
-13,5,Americana,Bravos,Cerveceros,Cerveceros,1,4
-13,5,Americana,Cachorros,'Medias rojas',Cachorros,6,0
-13,5,Americana,Cardenales,Piratas,Cardenales,10,3
-13,5,Americana,Dodgers,Yankees,Dodgers,7,5
-15,5,Nacional,Gigantes,'Medias rojas',Gigantes,3,0
-15,5,Nacional,Cardenales,Cerveceros,Cardenales,9,8
-15,5,Nacional,Bravos,Astros,Bravos,3,2
-15,5,Nacional,Cachorros,Yankees,Yankees,2,10
-15,5,Nacional,Dodgers,Piratas,Dodgers,9,7
-16,5,Nacional,Gigantes,Yankees,Gigantes,2,0
-16,5,Nacional,Cardenales,Astros,Astros,0,1
-16,5,Nacional,Cachorros,'Medias rojas','Medias rojas',1,8
-16,5,Nacional,Dodgers,Cerveceros,Dodgers,8,1
+1,4,Nacional,Dodgers,Piratas,Piratas,2,5
+1,4,Nacional,Cardenales,Astros,Cardenales,9,7
+1,4,Nacional,Bravos,Yankees,Yankees,1,6
+2,4,Nacional,Dodgers,Astros,Dodgers,6,4
+2,4,Nacional,Bravos,Yankees,Yankees,3,9
+2,4,Nacional,Cardenales,Piratas,Cardenales,6,3
+3,4,Nacional,Dodgers,Yankees,Yankees,3,10
+3,4,Nacional,Cardenales,Astros,Astros,3,4
+3,4,Nacional,Bravos,Piratas,Bravos,8,3
+5,4,Americana,Cardenales,Yankees,Yankees,1,5
+5,4,Americana,Dodgers,Piratas,Dodgers,10,6
+5,4,Americana,Bravos,Astros,Bravos,8,6
+6,4,Americana,Dodgers,Astros,Astros,1,3
+6,4,Americana,Cardenales,Piratas,Cardenales,6,1
+6,4,Americana,Bravos,Yankees,Bravos,10,0
+7,4,Americana,Cardenales,Piratas,Piratas,1,7
+7,4,Americana,Bravos,Yankees,Yankees,3,8
+7,4,Americana,Dodgers,Astros,Dodgers,2,1
+9,4,Nacional,Dodgers,Astros,Astros,1,5
+9,4,Nacional,Bravos,Piratas,Bravos,10,7
+9,4,Nacional,Cardenales,Yankees,Cardenales,9,3
+10,4,Nacional,Dodgers,Astros,Dodgers,8,0
+10,4,Nacional,Cardenales,Yankees,Cardenales,7,2
+10,4,Nacional,Bravos,Piratas,Bravos,8,5
+11,4,Nacional,Cardenales,Astros,Cardenales,5,2
+11,4,Nacional,Dodgers,Piratas,Dodgers,9,8
+11,4,Nacional,Bravos,Yankees,Yankees,5,7
+13,4,Americana,Dodgers,Piratas,Dodgers,8,2
+13,4,Americana,Cardenales,Astros,Cardenales,10,5
+13,4,Americana,Bravos,Yankees,Bravos,8,4
+14,4,Americana,Bravos,Piratas,Bravos,10,3
+14,4,Americana,Dodgers,Astros,Dodgers,4,1
+14,4,Americana,Cardenales,Yankees,Yankees,3,4
+15,4,Americana,Dodgers,Astros,Dodgers,6,5
+15,4,Americana,Cardenales,Piratas,Piratas,1,10
+15,4,Americana,Bravos,Yankees,Bravos,8,7
+17,4,Nacional,Bravos,Yankees,Yankees,9,10
+17,4,Nacional,Cardenales,Astros,Cardenales,6,0
+17,4,Nacional,Dodgers,Piratas,Piratas,4,7
+18,4,Nacional,Cardenales,Piratas,Piratas,0,10
+18,4,Nacional,Bravos,Astros,Astros,6,8
+18,4,Nacional,Dodgers,Yankees,Yankees,2,6
+19,4,Nacional,Bravos,Piratas,Piratas,6,10
+19,4,Nacional,Cardenales,Astros,Cardenales,8,2
+19,4,Nacional,Dodgers,Yankees,Dodgers,9,8
+21,4,Americana,Bravos,Piratas,Bravos,10,1
+21,4,Americana,Cardenales,Astros,Cardenales,1,0
+21,4,Americana,Dodgers,Yankees,Yankees,0,7
+22,4,Americana,Dodgers,Piratas,Dodgers,10,5
+22,4,Americana,Cardenales,Yankees,Yankees,0,6
+22,4,Americana,Bravos,Astros,Astros,1,5
+23,4,Americana,Cardenales,Yankees,Cardenales,10,1
+23,4,Americana,Dodgers,Piratas,Piratas,4,8
+23,4,Americana,Bravos,Astros,Astros,7,8
+25,4,Nacional,Cardenales,Astros,Astros,3,5
+25,4,Nacional,Bravos,Yankees,Yankees,4,7
+25,4,Nacional,Dodgers,Piratas,Dodgers,8,4
+26,4,Nacional,Cardenales,Piratas,Cardenales,10,0
+26,4,Nacional,Bravos,Yankees,Yankees,3,8
+26,4,Nacional,Dodgers,Astros,Astros,2,7
+27,4,Nacional,Bravos,Piratas,Piratas,6,7
+27,4,Nacional,Cardenales,Yankees,Cardenales,8,3
+27,4,Nacional,Dodgers,Astros,Astros,0,7
+29,4,Americana,Cardenales,Yankees,Cardenales,2,0
+29,4,Americana,Bravos,Piratas,Bravos,2,0
+29,4,Americana,Dodgers,Astros,Astros,2,3
+30,4,Americana,Cardenales,Piratas,Piratas,7,10
+30,4,Americana,Dodgers,Yankees,Dodgers,6,4
+30,4,Americana,Bravos,Astros,Astros,0,9
+1,5,Nacional,Bravos,Astros,Astros,3,4
+1,5,Nacional,Dodgers,Yankees,Yankees,1,2
+1,5,Nacional,Cardenales,Piratas,Piratas,4,7
+3,5,Americana,Dodgers,Piratas,Dodgers,7,0
+3,5,Americana,Bravos,Astros,Astros,2,4
+3,5,Americana,Cardenales,Yankees,Cardenales,7,0
+4,5,Americana,Dodgers,Astros,Astros,3,5
+4,5,Americana,Cardenales,Piratas,Piratas,5,7
+4,5,Americana,Bravos,Yankees,Bravos,2,0
+5,5,Americana,Dodgers,Piratas,Dodgers,6,0
+5,5,Americana,Bravos,Astros,Astros,2,6
+5,5,Americana,Cardenales,Yankees,Yankees,0,5
+7,5,Nacional,Cardenales,Piratas,Piratas,0,10
+7,5,Nacional,Dodgers,Astros,Dodgers,9,6
+7,5,Nacional,Bravos,Yankees,Bravos,5,0
+8,5,Nacional,Dodgers,Piratas,Piratas,6,9
+8,5,Nacional,Bravos,Astros,Astros,4,8
+8,5,Nacional,Cardenales,Yankees,Yankees,3,6
+9,5,Nacional,Cardenales,Yankees,Yankees,0,10
+9,5,Nacional,Dodgers,Astros,Dodgers,10,4
+9,5,Nacional,Bravos,Piratas,Piratas,8,10
+11,5,Americana,Dodgers,Astros,Astros,3,5
+11,5,Americana,Cardenales,Yankees,Cardenales,5,3
+11,5,Americana,Bravos,Piratas,Piratas,0,9
+12,5,Americana,Bravos,Piratas,Piratas,5,8
+12,5,Americana,Dodgers,Yankees,Dodgers,9,4
+12,5,Americana,Cardenales,Astros,Astros,3,6
+13,5,Americana,Cardenales,Piratas,Cardenales,10,7
+13,5,Americana,Dodgers,Yankees,Yankees,3,7
+13,5,Americana,Bravos,Astros,Bravos,10,6
+15,5,Nacional,Cardenales,Astros,Cardenales,7,3
+15,5,Nacional,Bravos,Piratas,Piratas,4,8
+15,5,Nacional,Dodgers,Yankees,Yankees,1,6
 16,5,Nacional,Bravos,Piratas,Bravos,7,6
-17,5,Nacional,Cachorros,Astros,Astros,5,6
-17,5,Nacional,Bravos,'Medias rojas','Medias rojas',2,3
-17,5,Nacional,Gigantes,Cerveceros,Cerveceros,8,9
-17,5,Nacional,Cardenales,Yankees,Cardenales,10,1
-17,5,Nacional,Dodgers,Piratas,Piratas,2,10
-19,5,Americana,Dodgers,Piratas,Dodgers,9,6
-19,5,Americana,Cardenales,Yankees,Yankees,0,8
-19,5,Americana,Cachorros,Astros,Astros,1,4
-19,5,Americana,Bravos,'Medias rojas',Bravos,10,5
-19,5,Americana,Gigantes,Cerveceros,Cerveceros,1,4
-20,5,Americana,Dodgers,Piratas,Dodgers,9,4
-20,5,Americana,Gigantes,Yankees,Yankees,1,4
-20,5,Americana,Cardenales,'Medias rojas',Cardenales,9,3
-20,5,Americana,Cachorros,Astros,Cachorros,10,2
-20,5,Americana,Bravos,Cerveceros,Bravos,7,2
-21,5,Americana,Cachorros,Cerveceros,Cachorros,5,0
-21,5,Americana,Gigantes,Yankees,Yankees,8,9
-21,5,Americana,Cardenales,Astros,Cardenales,3,2
-21,5,Americana,Dodgers,'Medias rojas','Medias rojas',0,7
-21,5,Americana,Bravos,Piratas,Piratas,2,10
-23,5,Nacional,Dodgers,Astros,Dodgers,4,3
-23,5,Nacional,Cardenales,Cerveceros,Cardenales,10,3
-23,5,Nacional,Gigantes,Piratas,Piratas,4,8
-23,5,Nacional,Bravos,Yankees,Bravos,9,5
-23,5,Nacional,Cachorros,'Medias rojas','Medias rojas',4,7
-24,5,Nacional,Cardenales,'Medias rojas','Medias rojas',3,6
-24,5,Nacional,Dodgers,Astros,Dodgers,6,0
-24,5,Nacional,Gigantes,Piratas,Piratas,4,7
-24,5,Nacional,Bravos,Cerveceros,Cerveceros,0,2
-24,5,Nacional,Cachorros,Yankees,Yankees,5,9
-25,5,Nacional,Dodgers,Cerveceros,Cerveceros,4,7
-25,5,Nacional,Cachorros,Yankees,Yankees,6,7
-25,5,Nacional,Cardenales,'Medias rojas','Medias rojas',5,6
-25,5,Nacional,Gigantes,Piratas,Gigantes,5,2
-25,5,Nacional,Bravos,Astros,Astros,3,7
-27,5,Americana,Cachorros,Cerveceros,Cerveceros,4,8
-27,5,Americana,Dodgers,Piratas,Piratas,4,10
-27,5,Americana,Gigantes,Astros,Astros,1,5
-27,5,Americana,Cardenales,Yankees,Yankees,3,5
-27,5,Americana,Bravos,'Medias rojas','Medias rojas',3,4
-28,5,Americana,Dodgers,Piratas,Dodgers,9,8
-28,5,Americana,Cachorros,Astros,Astros,5,9
-28,5,Americana,Bravos,Yankees,Yankees,6,8
-28,5,Americana,Cardenales,'Medias rojas','Medias rojas',2,6
-28,5,Americana,Gigantes,Cerveceros,Cerveceros,1,3
-29,5,Americana,Cardenales,Astros,Cardenales,9,5
-29,5,Americana,Bravos,'Medias rojas',Bravos,4,1
-29,5,Americana,Gigantes,Piratas,Piratas,3,5
-29,5,Americana,Cachorros,Cerveceros,Cerveceros,0,7
-29,5,Americana,Dodgers,Yankees,Dodgers,9,2
-31,5,Nacional,Cardenales,Yankees,Cardenales,10,8
-31,5,Nacional,Gigantes,Astros,Gigantes,9,8
-31,5,Nacional,Bravos,Cerveceros,Bravos,5,4
-31,5,Nacional,Cachorros,Piratas,Cachorros,9,8
-31,5,Nacional,Dodgers,'Medias rojas','Medias rojas',8,10
-1,6,Nacional,Dodgers,Cerveceros,Dodgers,10,2
-1,6,Nacional,Gigantes,'Medias rojas','Medias rojas',1,2
-1,6,Nacional,Cardenales,Yankees,Yankees,8,9
-1,6,Nacional,Cachorros,Astros,Cachorros,10,7
-1,6,Nacional,Bravos,Piratas,Piratas,4,6
-2,6,Nacional,Bravos,Piratas,Bravos,10,2
-2,6,Nacional,Dodgers,Astros,Astros,3,8
-2,6,Nacional,Cardenales,'Medias rojas',Cardenales,9,3
-2,6,Nacional,Gigantes,Yankees,Gigantes,5,2
-2,6,Nacional,Cachorros,Cerveceros,Cerveceros,0,1
-4,6,Americana,Bravos,Astros,Astros,0,7
-4,6,Americana,Gigantes,Cerveceros,Cerveceros,7,9
-4,6,Americana,Cachorros,Yankees,Yankees,2,5
-4,6,Americana,Dodgers,'Medias rojas',Dodgers,10,1
-4,6,Americana,Cardenales,Piratas,Piratas,2,7
-5,6,Americana,Dodgers,'Medias rojas',Dodgers,2,0
-5,6,Americana,Bravos,Astros,Astros,0,10
-5,6,Americana,Cardenales,Cerveceros,Cardenales,10,6
-5,6,Americana,Gigantes,Yankees,Yankees,5,8
-5,6,Americana,Cachorros,Piratas,Cachorros,8,6
-6,6,Americana,Cachorros,Yankees,Yankees,5,10
-6,6,Americana,Dodgers,Astros,Dodgers,9,4
-6,6,Americana,Bravos,Piratas,Bravos,8,0
-6,6,Americana,Cardenales,Cerveceros,Cerveceros,7,9
-6,6,Americana,Gigantes,'Medias rojas','Medias rojas',0,6
-8,6,Nacional,Bravos,Cerveceros,Bravos,9,2
-8,6,Nacional,Cachorros,'Medias rojas',Cachorros,7,0
-8,6,Nacional,Gigantes,Astros,Gigantes,1,0
-8,6,Nacional,Cardenales,Piratas,Piratas,0,4
-8,6,Nacional,Dodgers,Yankees,Yankees,1,6
-9,6,Nacional,Cachorros,Piratas,Piratas,9,10
-9,6,Nacional,Cardenales,Cerveceros,Cardenales,4,1
-9,6,Nacional,Gigantes,'Medias rojas',Gigantes,8,1
-9,6,Nacional,Bravos,Yankees,Bravos,8,7
-9,6,Nacional,Dodgers,Astros,Astros,1,4
-10,6,Nacional,Cachorros,Astros,Astros,0,6
-10,6,Nacional,Dodgers,'Medias rojas','Medias rojas',9,10
-10,6,Nacional,Gigantes,Yankees,Gigantes,7,5
-10,6,Nacional,Cardenales,Cerveceros,Cerveceros,1,9
-10,6,Nacional,Bravos,Piratas,Bravos,8,2
-12,6,Americana,Bravos,Piratas,Bravos,8,1
-12,6,Americana,Dodgers,Astros,Astros,1,8
-12,6,Americana,Gigantes,Cerveceros,Cerveceros,6,10
-12,6,Americana,Cardenales,Yankees,Cardenales,8,0
-12,6,Americana,Cachorros,'Medias rojas',Cachorros,7,3
-13,6,Americana,Cachorros,'Medias rojas',Cachorros,10,8
-13,6,Americana,Dodgers,Astros,Astros,1,6
-13,6,Americana,Gigantes,Yankees,Yankees,3,6
-13,6,Americana,Cardenales,Cerveceros,Cardenales,10,1
-13,6,Americana,Bravos,Piratas,Bravos,6,2
-14,6,Americana,Cardenales,Cerveceros,Cardenales,9,7
-14,6,Americana,Cachorros,Yankees,Cachorros,4,3
-14,6,Americana,Dodgers,'Medias rojas',Dodgers,5,0
-14,6,Americana,Bravos,Astros,Astros,6,10
-14,6,Americana,Gigantes,Piratas,Gigantes,2,0
-16,6,Nacional,Cachorros,Astros,Cachorros,3,0
-16,6,Nacional,Dodgers,Cerveceros,Dodgers,4,2
-16,6,Nacional,Cardenales,Piratas,Cardenales,8,4
-16,6,Nacional,Bravos,Yankees,Bravos,2,0
-16,6,Nacional,Gigantes,'Medias rojas','Medias rojas',2,5
-17,6,Nacional,Dodgers,Piratas,Piratas,5,6
-17,6,Nacional,Cardenales,Astros,Cardenales,7,0
-17,6,Nacional,Bravos,Cerveceros,Cerveceros,6,8
-17,6,Nacional,Gigantes,'Medias rojas',Gigantes,9,1
-17,6,Nacional,Cachorros,Yankees,Cachorros,10,7
-18,6,Nacional,Cachorros,Astros,Astros,5,9
-18,6,Nacional,Dodgers,'Medias rojas','Medias rojas',0,8
-18,6,Nacional,Gigantes,Piratas,Piratas,4,9
-18,6,Nacional,Bravos,Yankees,Bravos,9,5
-18,6,Nacional,Cardenales,Cerveceros,Cardenales,9,1
-20,6,Americana,Cardenales,Cerveceros,Cardenales,10,1
-20,6,Americana,Cachorros,Yankees,Cachorros,7,1
-20,6,Americana,Bravos,Astros,Astros,6,9
-20,6,Americana,Dodgers,'Medias rojas','Medias rojas',4,5
-20,6,Americana,Gigantes,Piratas,Gigantes,5,0
-21,6,Americana,Cardenales,Yankees,Yankees,1,9
-21,6,Americana,Bravos,Astros,Astros,4,7
-21,6,Americana,Cachorros,Cerveceros,Cachorros,10,4
-21,6,Americana,Dodgers,'Medias rojas','Medias rojas',1,2
-21,6,Americana,Gigantes,Piratas,Piratas,8,9
-22,6,Americana,Bravos,'Medias rojas',Bravos,8,6
-22,6,Americana,Dodgers,Astros,Dodgers,9,8
-22,6,Americana,Cardenales,Piratas,Piratas,0,4
-22,6,Americana,Cachorros,Yankees,Yankees,0,3
-22,6,Americana,Gigantes,Cerveceros,Gigantes,9,2
-24,6,Nacional,Dodgers,Yankees,Yankees,3,5
-24,6,Nacional,Cardenales,Astros,Cardenales,9,8
-24,6,Nacional,Bravos,'Medias rojas','Medias rojas',2,3
-24,6,Nacional,Gigantes,Cerveceros,Cerveceros,0,10
-24,6,Nacional,Cachorros,Piratas,Piratas,4,5
-25,6,Nacional,Dodgers,'Medias rojas','Medias rojas',4,7
-25,6,Nacional,Gigantes,Cerveceros,Gigantes,9,7
-25,6,Nacional,Bravos,Piratas,Bravos,4,2
-25,6,Nacional,Cardenales,Astros,Cardenales,9,8
-25,6,Nacional,Cachorros,Yankees,Yankees,1,9
-26,6,Nacional,Gigantes,Yankees,Yankees,4,10
-26,6,Nacional,Cardenales,Piratas,Cardenales,4,0
-26,6,Nacional,Bravos,'Medias rojas',Bravos,10,4
-26,6,Nacional,Cachorros,Cerveceros,Cerveceros,5,9
-26,6,Nacional,Dodgers,Astros,Astros,0,3
-28,6,Americana,Bravos,Astros,Bravos,8,2
-28,6,Americana,Cachorros,Cerveceros,Cerveceros,8,9
-28,6,Americana,Dodgers,'Medias rojas',Dodgers,9,3
-28,6,Americana,Cardenales,Piratas,Piratas,3,6
-28,6,Americana,Gigantes,Yankees,Yankees,5,7
-29,6,Americana,Cardenales,Astros,Cardenales,9,8
-29,6,Americana,Bravos,Yankees,Bravos,7,2
-29,6,Americana,Dodgers,Piratas,Piratas,9,10
-29,6,Americana,Cachorros,'Medias rojas','Medias rojas',1,8
-29,6,Americana,Gigantes,Cerveceros,Gigantes,5,2
-30,6,Americana,Cardenales,Astros,Cardenales,9,1
-30,6,Americana,Gigantes,Piratas,Gigantes,7,3
-30,6,Americana,Bravos,Yankees,Yankees,1,7
-30,6,Americana,Dodgers,'Medias rojas','Medias rojas',0,3
-30,6,Americana,Cachorros,Cerveceros,Cerveceros,2,7
-2,7,Americana,Cardenales,Astros,Cardenales,9,1
-2,7,Americana,Gigantes,Piratas,Piratas,1,6
-2,7,Americana,Bravos,Yankees,Yankees,4,6
-2,7,Americana,Dodgers,'Medias rojas','Medias rojas',3,8
-2,7,Americana,Cachorros,Cerveceros,Cachorros,7,5
-3,7,Americana,Cardenales,'Medias rojas',Cardenales,5,2
-3,7,Americana,Cachorros,Piratas,Cachorros,8,0
-3,7,Americana,Dodgers,Yankees,Yankees,2,4
-3,7,Americana,Bravos,Astros,Bravos,9,1
-3,7,Americana,Gigantes,Cerveceros,Cerveceros,1,7
-4,7,Americana,Gigantes,Yankees,Yankees,2,4
-4,7,Americana,Bravos,'Medias rojas',Bravos,3,2
-4,7,Americana,Dodgers,Piratas,Piratas,3,7
-4,7,Americana,Cardenales,Cerveceros,Cerveceros,0,9
-4,7,Americana,Cachorros,Astros,Cachorros,9,1
-6,7,Nacional,Gigantes,Astros,Gigantes,9,4
-6,7,Nacional,Dodgers,Yankees,Yankees,0,7
-6,7,Nacional,Bravos,Cerveceros,Bravos,6,5
-6,7,Nacional,Cachorros,'Medias rojas',Cachorros,9,3
-6,7,Nacional,Cardenales,Piratas,Piratas,2,8
-7,7,Nacional,Cardenales,Cerveceros,Cardenales,6,3
-7,7,Nacional,Dodgers,'Medias rojas','Medias rojas',0,6
-7,7,Nacional,Gigantes,Piratas,Piratas,8,9
-7,7,Nacional,Cachorros,Astros,Astros,4,7
-7,7,Nacional,Bravos,Yankees,Yankees,7,9
-8,7,Nacional,Dodgers,Piratas,Dodgers,9,3
-8,7,Nacional,Cachorros,'Medias rojas','Medias rojas',1,9
-8,7,Nacional,Cardenales,Cerveceros,Cardenales,7,6
-8,7,Nacional,Bravos,Astros,Bravos,9,7
-8,7,Nacional,Gigantes,Yankees,Gigantes,2,1
-10,7,Americana,Cardenales,Astros,Astros,2,4
-10,7,Americana,Bravos,Piratas,Bravos,10,5
-10,7,Americana,Gigantes,Cerveceros,Gigantes,9,2
-10,7,Americana,Dodgers,Yankees,Yankees,1,3
-10,7,Americana,Cachorros,'Medias rojas',Cachorros,5,0
-11,7,Americana,Cachorros,Astros,Astros,5,8
-11,7,Americana,Gigantes,'Medias rojas','Medias rojas',3,10
-11,7,Americana,Cardenales,Yankees,Cardenales,6,4
-11,7,Americana,Bravos,Cerveceros,Cerveceros,0,1
-11,7,Americana,Dodgers,Piratas,Dodgers,2,1
-12,7,Americana,Cachorros,Cerveceros,Cachorros,5,4
-12,7,Americana,Gigantes,Piratas,Gigantes,7,5
-12,7,Americana,Dodgers,'Medias rojas','Medias rojas',1,7
-12,7,Americana,Cardenales,Yankees,Yankees,4,8
-12,7,Americana,Bravos,Astros,Bravos,10,3
-14,7,Nacional,Dodgers,Piratas,Dodgers,3,2
-14,7,Nacional,Cachorros,'Medias rojas',Cachorros,10,6
-14,7,Nacional,Cardenales,Yankees,Cardenales,4,1
-14,7,Nacional,Bravos,Astros,Astros,3,10
-14,7,Nacional,Gigantes,Cerveceros,Cerveceros,2,5
-15,7,Nacional,Gigantes,'Medias rojas','Medias rojas',9,10
-15,7,Nacional,Bravos,Cerveceros,Cerveceros,2,10
-15,7,Nacional,Cardenales,Piratas,Piratas,0,9
-15,7,Nacional,Dodgers,Astros,Dodgers,7,5
-15,7,Nacional,Cachorros,Yankees,Yankees,5,10
-16,7,Nacional,Gigantes,'Medias rojas',Gigantes,10,7
-16,7,Nacional,Cachorros,Cerveceros,Cachorros,5,3
-16,7,Nacional,Bravos,Yankees,Yankees,3,4
-16,7,Nacional,Dodgers,Piratas,Piratas,1,9
-16,7,Nacional,Cardenales,Astros,Astros,0,9
-18,7,Americana,Cardenales,Cerveceros,Cardenales,9,7
-18,7,Americana,Gigantes,Astros,Astros,3,4
-18,7,Americana,Dodgers,'Medias rojas',Dodgers,5,3
-18,7,Americana,Cachorros,Piratas,Cachorros,9,1
-18,7,Americana,Bravos,Yankees,Bravos,6,3
-19,7,Americana,Cachorros,Piratas,Cachorros,8,2
-19,7,Americana,Gigantes,Cerveceros,Gigantes,9,6
-19,7,Americana,Bravos,'Medias rojas','Medias rojas',0,4
-19,7,Americana,Dodgers,Astros,Astros,7,8
-19,7,Americana,Cardenales,Yankees,Yankees,3,5
-20,7,Americana,Cachorros,Cerveceros,Cerveceros,4,5
-20,7,Americana,Gigantes,'Medias rojas','Medias rojas',4,6
-20,7,Americana,Dodgers,Astros,Dodgers,6,4
-20,7,Americana,Bravos,Yankees,Bravos,6,1
-20,7,Americana,Cardenales,Piratas,Piratas,6,10
-22,7,Nacional,Bravos,Piratas,Bravos,9,7
-22,7,Nacional,Cardenales,'Medias rojas','Medias rojas',0,9
-22,7,Nacional,Cachorros,Yankees,Cachorros,3,2
-22,7,Nacional,Gigantes,Astros,Gigantes,7,2
-22,7,Nacional,Dodgers,Cerveceros,Dodgers,10,2
-23,7,Nacional,Dodgers,Cerveceros,Dodgers,10,4
-23,7,Nacional,Bravos,'Medias rojas',Bravos,5,1
-23,7,Nacional,Cardenales,Yankees,Cardenales,8,1
-23,7,Nacional,Gigantes,Astros,Astros,3,4
-23,7,Nacional,Cachorros,Piratas,Piratas,4,10
-24,7,Nacional,Cardenales,Piratas,Piratas,4,6
-24,7,Nacional,Gigantes,'Medias rojas','Medias rojas',2,5
-24,7,Nacional,Bravos,Yankees,Yankees,5,10
-24,7,Nacional,Dodgers,Astros,Astros,3,4
-24,7,Nacional,Cachorros,Cerveceros,Cachorros,6,4
-26,7,Americana,Cardenales,'Medias rojas',Cardenales,5,1
-26,7,Americana,Dodgers,Yankees,Yankees,1,5
-26,7,Americana,Bravos,Cerveceros,Cerveceros,0,5
-26,7,Americana,Gigantes,Piratas,Gigantes,2,1
-26,7,Americana,Cachorros,Astros,Cachorros,5,3
-27,7,Americana,Cardenales,Astros,Astros,3,5
-27,7,Americana,Bravos,Piratas,Piratas,5,8
-27,7,Americana,Gigantes,'Medias rojas','Medias rojas',4,7
-27,7,Americana,Dodgers,Cerveceros,Cerveceros,3,4
-27,7,Americana,Cachorros,Yankees,Yankees,1,9
-28,7,Americana,Dodgers,'Medias rojas',Dodgers,9,7
-28,7,Americana,Cardenales,Piratas,Cardenales,9,7
-28,7,Americana,Bravos,Cerveceros,Cerveceros,6,9
-28,7,Americana,Gigantes,Yankees,Yankees,0,5
-28,7,Americana,Cachorros,Astros,Astros,0,8
-30,7,Nacional,Cachorros,Piratas,Piratas,3,9
-30,7,Nacional,Gigantes,'Medias rojas',Gigantes,7,2
-30,7,Nacional,Bravos,Cerveceros,Bravos,4,0
-30,7,Nacional,Cardenales,Astros,Astros,0,10
-30,7,Nacional,Dodgers,Yankees,Yankees,8,9
-31,7,Nacional,Dodgers,'Medias rojas','Medias rojas',1,10
-31,7,Nacional,Bravos,Piratas,Piratas,0,6
-31,7,Nacional,Gigantes,Astros,Gigantes,6,0
-31,7,Nacional,Cardenales,Yankees,Yankees,4,6
-31,7,Nacional,Cachorros,Cerveceros,Cerveceros,4,6
-1,8,Nacional,Cardenales,Cerveceros,Cardenales,8,4
-1,8,Nacional,Gigantes,Piratas,Gigantes,9,1
-1,8,Nacional,Cachorros,'Medias rojas','Medias rojas',6,10
-1,8,Nacional,Dodgers,Yankees,Dodgers,9,7
-1,8,Nacional,Bravos,Astros,Bravos,8,6
-3,8,Americana,Dodgers,Piratas,Piratas,0,8
-3,8,Americana,Gigantes,Astros,Astros,1,6
-3,8,Americana,Bravos,Yankees,Yankees,3,4
-3,8,Americana,Cardenales,'Medias rojas',Cardenales,10,6
-3,8,Americana,Cachorros,Cerveceros,Cerveceros,3,5
-4,8,Americana,Cardenales,Yankees,Yankees,0,2
-4,8,Americana,Gigantes,Piratas,Piratas,0,2
-4,8,Americana,Dodgers,Astros,Astros,2,3
-4,8,Americana,Bravos,'Medias rojas',Bravos,9,1
-4,8,Americana,Cachorros,Cerveceros,Cerveceros,1,9
-5,8,Americana,Cachorros,'Medias rojas',Cachorros,10,4
-5,8,Americana,Bravos,Yankees,Bravos,7,3
-5,8,Americana,Gigantes,Astros,Astros,4,6
-5,8,Americana,Cardenales,Piratas,Piratas,2,9
-5,8,Americana,Dodgers,Cerveceros,Cerveceros,2,5
-7,8,Nacional,Gigantes,Yankees,Yankees,0,3
-7,8,Nacional,Bravos,Astros,Bravos,10,1
-7,8,Nacional,Cardenales,Piratas,Piratas,6,10
-7,8,Nacional,Dodgers,Cerveceros,Dodgers,8,0
-7,8,Nacional,Cachorros,'Medias rojas',Cachorros,10,2
-8,8,Nacional,Cardenales,Piratas,Cardenales,7,0
-8,8,Nacional,Gigantes,Astros,Gigantes,8,1
-8,8,Nacional,Bravos,Cerveceros,Cerveceros,3,6
-8,8,Nacional,Cachorros,'Medias rojas',Cachorros,4,1
-8,8,Nacional,Dodgers,Yankees,Dodgers,10,0
-9,8,Nacional,Gigantes,Piratas,Gigantes,7,3
-9,8,Nacional,Bravos,Yankees,Yankees,1,6
-9,8,Nacional,Cachorros,'Medias rojas',Cachorros,4,2
-9,8,Nacional,Dodgers,Astros,Dodgers,10,0
-9,8,Nacional,Cardenales,Cerveceros,Cardenales,6,3
-11,8,Americana,Cardenales,'Medias rojas','Medias rojas',8,10
-11,8,Americana,Dodgers,Astros,Astros,1,8
-11,8,Americana,Bravos,Piratas,Bravos,1,0
-11,8,Americana,Gigantes,Cerveceros,Gigantes,10,3
-11,8,Americana,Cachorros,Yankees,Cachorros,5,4
-12,8,Americana,Bravos,Yankees,Bravos,9,6
-12,8,Americana,Gigantes,Astros,Astros,2,6
-12,8,Americana,Cardenales,'Medias rojas','Medias rojas',6,7
-12,8,Americana,Cachorros,Piratas,Piratas,0,3
-12,8,Americana,Dodgers,Cerveceros,Cerveceros,0,4
-13,8,Americana,Cachorros,Cerveceros,Cerveceros,6,10
-13,8,Americana,Cardenales,Yankees,Yankees,3,10
-13,8,Americana,Dodgers,Piratas,Dodgers,8,5
-13,8,Americana,Bravos,Astros,Bravos,10,1
-13,8,Americana,Gigantes,'Medias rojas',Gigantes,9,5
-15,8,Nacional,Cachorros,Piratas,Cachorros,10,3
-15,8,Nacional,Cardenales,'Medias rojas',Cardenales,9,2
-15,8,Nacional,Gigantes,Astros,Astros,4,7
-15,8,Nacional,Bravos,Cerveceros,Cerveceros,2,3
-15,8,Nacional,Dodgers,Yankees,Yankees,9,10
-16,8,Nacional,Dodgers,'Medias rojas',Dodgers,7,5
-16,8,Nacional,Cardenales,Cerveceros,Cardenales,5,3
-16,8,Nacional,Gigantes,Piratas,Gigantes,7,2
-16,8,Nacional,Bravos,Astros,Astros,4,7
-16,8,Nacional,Cachorros,Yankees,Yankees,3,5
-17,8,Nacional,Cachorros,Astros,Cachorros,2,0
-17,8,Nacional,Dodgers,Piratas,Dodgers,9,5
-17,8,Nacional,Bravos,Cerveceros,Cerveceros,2,4
-17,8,Nacional,Cardenales,Yankees,Yankees,0,1
-17,8,Nacional,Gigantes,'Medias rojas',Gigantes,5,3
-19,8,Americana,Cachorros,Piratas,Piratas,6,7
-19,8,Americana,Cardenales,Astros,Cardenales,5,4
-19,8,Americana,Bravos,Cerveceros,Bravos,6,2
-19,8,Americana,Dodgers,'Medias rojas','Medias rojas',7,10
-19,8,Americana,Gigantes,Yankees,Gigantes,3,0
-20,8,Americana,Gigantes,Cerveceros,Cerveceros,1,2
-20,8,Americana,Cachorros,Astros,Cachorros,5,1
-20,8,Americana,Dodgers,'Medias rojas',Dodgers,4,2
-20,8,Americana,Bravos,Piratas,Bravos,5,3
-20,8,Americana,Cardenales,Yankees,Yankees,1,3
-21,8,Americana,Gigantes,'Medias rojas',Gigantes,8,3
-21,8,Americana,Cachorros,Cerveceros,Cachorros,10,3
-21,8,Americana,Bravos,Piratas,Bravos,5,2
-21,8,Americana,Cardenales,Astros,Astros,7,8
-21,8,Americana,Dodgers,Yankees,Dodgers,5,2
-23,8,Nacional,Bravos,Yankees,Yankees,0,10
-23,8,Nacional,Dodgers,Cerveceros,Dodgers,9,6
-23,8,Nacional,Gigantes,Astros,Astros,8,10
-23,8,Nacional,Cachorros,Piratas,Cachorros,7,3
-23,8,Nacional,Cardenales,'Medias rojas',Cardenales,5,0
-24,8,Nacional,Bravos,'Medias rojas','Medias rojas',3,6
-24,8,Nacional,Dodgers,Cerveceros,Dodgers,8,2
-24,8,Nacional,Gigantes,Yankees,Yankees,6,10
-24,8,Nacional,Cardenales,Astros,Cardenales,3,1
-24,8,Nacional,Cachorros,Piratas,Cachorros,10,3
-25,8,Nacional,Dodgers,Yankees,Dodgers,10,8
-25,8,Nacional,Bravos,Piratas,Bravos,8,4
-25,8,Nacional,Gigantes,'Medias rojas',Gigantes,9,4
-25,8,Nacional,Cachorros,Astros,Cachorros,9,4
-25,8,Nacional,Cardenales,Cerveceros,Cardenales,10,7
-27,8,Americana,Cachorros,Astros,Cachorros,7,0
-27,8,Americana,Bravos,Yankees,Yankees,0,5
-27,8,Americana,Dodgers,'Medias rojas',Dodgers,9,7
-27,8,Americana,Gigantes,Piratas,Gigantes,10,7
-27,8,Americana,Cardenales,Cerveceros,Cardenales,8,3
-28,8,Americana,Cardenales,Astros,Astros,5,6
-28,8,Americana,Cachorros,Piratas,Cachorros,8,1
-28,8,Americana,Bravos,'Medias rojas',Bravos,6,2
-28,8,Americana,Gigantes,Cerveceros,Cerveceros,5,7
-28,8,Americana,Dodgers,Yankees,Yankees,5,7
-29,8,Americana,Gigantes,Yankees,Yankees,0,9
-29,8,Americana,Bravos,Cerveceros,Bravos,10,1
-29,8,Americana,Dodgers,Piratas,Dodgers,5,3
-29,8,Americana,Cachorros,Astros,Astros,8,10
-29,8,Americana,Cardenales,'Medias rojas',Cardenales,6,3
-31,8,Nacional,Cachorros,Piratas,Piratas,4,5
-31,8,Nacional,Cardenales,Astros,Cardenales,10,2
-31,8,Nacional,Bravos,'Medias rojas',Bravos,4,1
-31,8,Nacional,Dodgers,Yankees,Dodgers,8,5
-31,8,Nacional,Gigantes,Cerveceros,Gigantes,2,1
-1,9,Nacional,Cardenales,Yankees,Cardenales,8,2
-1,9,Nacional,Cachorros,'Medias rojas',Cachorros,9,3
-1,9,Nacional,Dodgers,Cerveceros,Cerveceros,3,7
-1,9,Nacional,Gigantes,Astros,Gigantes,10,8
-1,9,Nacional,Bravos,Piratas,Piratas,1,7
-2,9,Nacional,Gigantes,'Medias rojas','Medias rojas',2,10
-2,9,Nacional,Cachorros,Astros,Cachorros,10,4
-2,9,Nacional,Dodgers,Cerveceros,Cerveceros,0,10
-2,9,Nacional,Bravos,Yankees,Yankees,6,8
-2,9,Nacional,Cardenales,Piratas,Cardenales,10,9
-4,9,Americana,Bravos,Astros,Astros,8,10
-4,9,Americana,Cachorros,Piratas,Cachorros,6,5
-4,9,Americana,Cardenales,'Medias rojas',Cardenales,8,0
-4,9,Americana,Dodgers,Cerveceros,Cerveceros,2,5
-4,9,Americana,Gigantes,Yankees,Yankees,2,4
-5,9,Americana,Bravos,Astros,Bravos,6,3
-5,9,Americana,Cachorros,Yankees,Cachorros,5,0
-5,9,Americana,Cardenales,Cerveceros,Cerveceros,2,4
-5,9,Americana,Gigantes,'Medias rojas',Gigantes,9,5
-5,9,Americana,Dodgers,Piratas,Piratas,6,7
-6,9,Americana,Cachorros,Yankees,Yankees,3,8
-6,9,Americana,Dodgers,'Medias rojas','Medias rojas',2,4
-6,9,Americana,Cardenales,Piratas,Piratas,5,8
-6,9,Americana,Bravos,Cerveceros,Bravos,8,0
-6,9,Americana,Gigantes,Astros,Astros,6,7
-8,9,Nacional,Gigantes,Astros,Gigantes,7,0
-8,9,Nacional,Cachorros,Cerveceros,Cachorros,5,1
-8,9,Nacional,Bravos,Yankees,Yankees,1,7
-8,9,Nacional,Cardenales,'Medias rojas','Medias rojas',4,9
-8,9,Nacional,Dodgers,Piratas,Dodgers,10,2
-9,9,Nacional,Dodgers,Astros,Astros,5,10
-9,9,Nacional,Cachorros,'Medias rojas','Medias rojas',1,6
-9,9,Nacional,Cardenales,Piratas,Cardenales,7,1
-9,9,Nacional,Bravos,Cerveceros,Cerveceros,3,10
-9,9,Nacional,Gigantes,Yankees,Gigantes,9,6
-10,9,Nacional,Bravos,Yankees,Yankees,5,9
-10,9,Nacional,Cardenales,Astros,Astros,7,10
-10,9,Nacional,Cachorros,Piratas,Piratas,0,5
-10,9,Nacional,Dodgers,'Medias rojas',Dodgers,5,2
-10,9,Nacional,Gigantes,Cerveceros,Gigantes,8,1
-12,9,Americana,Cachorros,Astros,Astros,2,8
-12,9,Americana,Bravos,Piratas,Piratas,0,5
-12,9,Americana,Gigantes,'Medias rojas',Gigantes,10,7
-12,9,Americana,Dodgers,Cerveceros,Dodgers,6,4
-12,9,Americana,Cardenales,Yankees,Yankees,0,5
-13,9,Americana,Dodgers,'Medias rojas','Medias rojas',0,10
-13,9,Americana,Cardenales,Piratas,Cardenales,8,4
-13,9,Americana,Cachorros,Cerveceros,Cerveceros,4,8
-13,9,Americana,Bravos,Yankees,Bravos,7,2
-13,9,Americana,Gigantes,Astros,Gigantes,8,2
-14,9,Americana,Bravos,Piratas,Bravos,8,6
-14,9,Americana,Dodgers,Yankees,Dodgers,7,0
-14,9,Americana,Cardenales,'Medias rojas','Medias rojas',9,10
-14,9,Americana,Cachorros,Cerveceros,Cerveceros,1,10
-14,9,Americana,Gigantes,Astros,Astros,0,6
-16,9,Nacional,Cachorros,Yankees,Yankees,1,3
-16,9,Nacional,Bravos,Cerveceros,Cerveceros,1,3
-16,9,Nacional,Cardenales,'Medias rojas','Medias rojas',1,3
-16,9,Nacional,Dodgers,Astros,Dodgers,9,8
-16,9,Nacional,Gigantes,Piratas,Gigantes,10,3
-17,9,Nacional,Cardenales,'Medias rojas','Medias rojas',8,9
-17,9,Nacional,Bravos,Yankees,Bravos,10,3
-17,9,Nacional,Cachorros,Piratas,Cachorros,7,2
-17,9,Nacional,Dodgers,Astros,Astros,7,8
-17,9,Nacional,Gigantes,Cerveceros,Gigantes,7,5
-18,9,Nacional,Cachorros,'Medias rojas','Medias rojas',1,4
-18,9,Nacional,Dodgers,Piratas,Piratas,4,9
-18,9,Nacional,Cardenales,Yankees,Yankees,7,10
-18,9,Nacional,Bravos,Astros,Astros,6,8
-18,9,Nacional,Gigantes,Cerveceros,Gigantes,5,1
-20,9,Americana,Bravos,Astros,Astros,0,10
-20,9,Americana,Cachorros,Yankees,Cachorros,4,0
-20,9,Americana,Gigantes,'Medias rojas','Medias rojas',7,8
-20,9,Americana,Dodgers,Piratas,Dodgers,9,7
-20,9,Americana,Cardenales,Cerveceros,Cerveceros,3,5
-21,9,Americana,Gigantes,Yankees,Gigantes,8,4
-21,9,Americana,Dodgers,Cerveceros,Cerveceros,3,8
-21,9,Americana,Cachorros,Astros,Cachorros,6,1
-21,9,Americana,Cardenales,'Medias rojas',Cardenales,5,3
-21,9,Americana,Bravos,Piratas,Piratas,1,2
-22,9,Americana,Gigantes,Piratas,Gigantes,10,3
-22,9,Americana,Dodgers,Astros,Dodgers,10,7
-22,9,Americana,Cachorros,Yankees,Cachorros,9,7
-22,9,Americana,Cardenales,'Medias rojas',Cardenales,9,8
-22,9,Americana,Bravos,Cerveceros,Bravos,6,3
-24,9,Nacional,Cachorros,Yankees,Yankees,2,6
-24,9,Nacional,Bravos,'Medias rojas',Bravos,8,0
-24,9,Nacional,Dodgers,Piratas,Dodgers,4,1
-24,9,Nacional,Gigantes,Astros,Astros,0,3
-24,9,Nacional,Cardenales,Cerveceros,Cerveceros,4,7
-25,9,Nacional,Bravos,Yankees,Bravos,6,0
-25,9,Nacional,Dodgers,Astros,Astros,1,5
-25,9,Nacional,Cachorros,Cerveceros,Cerveceros,0,9
-25,9,Nacional,Gigantes,Piratas,Gigantes,7,3
-25,9,Nacional,Cardenales,'Medias rojas','Medias rojas',2,8
-26,9,Nacional,Gigantes,Piratas,Piratas,2,6
-26,9,Nacional,Cachorros,Astros,Astros,1,2
-26,9,Nacional,Cardenales,'Medias rojas','Medias rojas',0,9
-26,9,Nacional,Bravos,Cerveceros,Bravos,10,6
-26,9,Nacional,Dodgers,Yankees,Dodgers,5,0
-28,9,Americana,Dodgers,Cerveceros,Cerveceros,2,10
-28,9,Americana,Gigantes,Piratas,Gigantes,8,6
-28,9,Americana,Cardenales,'Medias rojas','Medias rojas',4,6
-28,9,Americana,Bravos,Yankees,Yankees,3,5
-28,9,Americana,Cachorros,Astros,Astros,1,4
-29,9,Americana,Cachorros,Yankees,Cachorros,10,7
-29,9,Americana,Gigantes,'Medias rojas','Medias rojas',0,8
-29,9,Americana,Dodgers,Piratas,Piratas,2,4
-29,9,Americana,Cardenales,Cerveceros,Cerveceros,7,10
-29,9,Americana,Bravos,Astros,Astros,0,10
-30,9,Americana,Cardenales,Astros,Cardenales,6,0
-30,9,Americana,Dodgers,Piratas,Dodgers,6,2
-30,9,Americana,Bravos,Cerveceros,Cerveceros,2,8
-30,9,Americana,Cachorros,Yankees,Cachorros,8,4
-30,9,Americana,Gigantes,'Medias rojas','Medias rojas',4,6
-2,10,Americana,Gigantes,Yankees,Gigantes,10,1
-2,10,Americana,Bravos,Cerveceros,Cerveceros,4,9
-2,10,Americana,Cachorros,'Medias rojas','Medias rojas',5,7
-2,10,Americana,Cardenales,Piratas,Cardenales,10,9
-2,10,Americana,Dodgers,Astros,Dodgers,8,4
-3,10,Americana,Gigantes,Piratas,Gigantes,9,2
-3,10,Americana,Cachorros,Cerveceros,Cachorros,7,6
-3,10,Americana,Dodgers,'Medias rojas','Medias rojas',5,8
-3,10,Americana,Bravos,Yankees,Bravos,9,8
-3,10,Americana,Cardenales,Astros,Astros,0,10
-4,10,Americana,Bravos,'Medias rojas',Bravos,10,6
-4,10,Americana,Cachorros,Yankees,Cachorros,8,2
-4,10,Americana,Dodgers,Astros,Dodgers,6,5
-4,10,Americana,Gigantes,Cerveceros,Gigantes,9,4
-4,10,Americana,Cardenales,Piratas,Cardenales,5,0
-6,10,Nacional,Bravos,Astros,Astros,2,9
-6,10,Nacional,Dodgers,Cerveceros,Dodgers,9,5
-6,10,Nacional,Cachorros,'Medias rojas',Cachorros,10,1
-6,10,Nacional,Cardenales,Piratas,Piratas,4,5
-6,10,Nacional,Gigantes,Yankees,Gigantes,5,2
-7,10,Nacional,Gigantes,Yankees,Gigantes,6,0
-7,10,Nacional,Cardenales,Astros,Cardenales,10,3
-7,10,Nacional,Dodgers,Piratas,Piratas,0,5
-7,10,Nacional,Cachorros,Cerveceros,Cachorros,3,2
-7,10,Nacional,Bravos,'Medias rojas','Medias rojas',2,9
-8,10,Nacional,Cachorros,Astros,Cachorros,10,4
-8,10,Nacional,Dodgers,Cerveceros,Cerveceros,6,8
-8,10,Nacional,Cardenales,'Medias rojas',Cardenales,10,7
-8,10,Nacional,Bravos,Yankees,Bravos,10,0
-8,10,Nacional,Gigantes,Piratas,Gigantes,8,0
-10,10,Americana,Cardenales,Piratas,Cardenales,8,2
-10,10,Americana,Cachorros,Yankees,Cachorros,8,1
-10,10,Americana,Dodgers,Cerveceros,Dodgers,8,2
-10,10,Americana,Bravos,Astros,Astros,3,7
-10,10,Americana,Gigantes,'Medias rojas',Gigantes,9,8
-11,10,Americana,Bravos,Cerveceros,Cerveceros,3,4
-11,10,Americana,Gigantes,'Medias rojas',Gigantes,8,4
-11,10,Americana,Dodgers,Yankees,Yankees,2,8
-11,10,Americana,Cachorros,Astros,Cachorros,5,1
-11,10,Americana,Cardenales,Piratas,Cardenales,10,2
-12,10,Americana,Bravos,Astros,Astros,2,7
-12,10,Americana,Cardenales,Yankees,Cardenales,6,0
-12,10,Americana,Dodgers,Cerveceros,Cerveceros,1,4
-12,10,Americana,Cachorros,'Medias rojas',Cachorros,6,4
-12,10,Americana,Gigantes,Piratas,Gigantes,10,9
-14,10,Nacional,Bravos,Cerveceros,Bravos,10,5
-14,10,Nacional,Cardenales,Astros,Cardenales,7,1
-14,10,Nacional,Gigantes,Piratas,Gigantes,2,1
-14,10,Nacional,Cachorros,'Medias rojas','Medias rojas',0,9
-14,10,Nacional,Dodgers,Yankees,Yankees,0,10
-15,10,Nacional,Gigantes,Piratas,Piratas,1,6
-15,10,Nacional,Bravos,'Medias rojas','Medias rojas',3,10
-15,10,Nacional,Cardenales,Astros,Cardenales,10,3
-15,10,Nacional,Cachorros,Cerveceros,Cerveceros,2,10
-15,10,Nacional,Dodgers,Yankees,Dodgers,9,0
-16,10,Nacional,Dodgers,Piratas,Piratas,5,10
-16,10,Nacional,Cachorros,'Medias rojas','Medias rojas',0,10
-16,10,Nacional,Gigantes,Yankees,Gigantes,3,1
-16,10,Nacional,Bravos,Astros,Bravos,8,7
-16,10,Nacional,Cardenales,Cerveceros,Cardenales,6,1
-18,10,Americana,Gigantes,Astros,Astros,6,10
-18,10,Americana,Bravos,Piratas,Bravos,10,9
-18,10,Americana,Dodgers,Cerveceros,Dodgers,6,4
-18,10,Americana,Cardenales,'Medias rojas','Medias rojas',3,4
-18,10,Americana,Cachorros,Yankees,Yankees,6,9
-19,10,Americana,Bravos,Yankees,Yankees,4,9
-19,10,Americana,Gigantes,Piratas,Piratas,2,3
-19,10,Americana,Cachorros,'Medias rojas','Medias rojas',3,9
-19,10,Americana,Dodgers,Astros,Dodgers,8,3
-19,10,Americana,Cardenales,Cerveceros,Cardenales,9,0
-20,10,Americana,Dodgers,Piratas,Dodgers,5,4
-20,10,Americana,Cachorros,'Medias rojas','Medias rojas',1,9
-20,10,Americana,Gigantes,Yankees,Gigantes,5,2
-20,10,Americana,Cardenales,Cerveceros,Cerveceros,0,7
-20,10,Americana,Bravos,Astros,Astros,0,2
-22,10,Nacional,Bravos,Piratas,Piratas,5,8
-22,10,Nacional,Cardenales,Yankees,Cardenales,3,0
-22,10,Nacional,Dodgers,Astros,Astros,3,8
-22,10,Nacional,Cachorros,Cerveceros,Cerveceros,0,1
-22,10,Nacional,Gigantes,'Medias rojas','Medias rojas',5,6
-23,10,Nacional,Gigantes,'Medias rojas','Medias rojas',0,2
-23,10,Nacional,Bravos,Cerveceros,Cerveceros,5,8
-23,10,Nacional,Dodgers,Piratas,Piratas,5,8
+16,5,Nacional,Dodgers,Astros,Dodgers,6,3
+16,5,Nacional,Cardenales,Yankees,Cardenales,4,3
+17,5,Nacional,Dodgers,Yankees,Dodgers,10,1
+17,5,Nacional,Cardenales,Astros,Cardenales,10,9
+17,5,Nacional,Bravos,Piratas,Piratas,2,6
+19,5,Americana,Dodgers,Astros,Dodgers,10,1
+19,5,Americana,Bravos,Yankees,Yankees,4,6
+19,5,Americana,Cardenales,Piratas,Piratas,4,7
+20,5,Americana,Dodgers,Yankees,Dodgers,10,3
+20,5,Americana,Bravos,Piratas,Piratas,2,10
+20,5,Americana,Cardenales,Astros,Astros,9,10
+21,5,Americana,Dodgers,Astros,Dodgers,9,7
+21,5,Americana,Bravos,Piratas,Piratas,0,10
+21,5,Americana,Cardenales,Yankees,Cardenales,3,1
+23,5,Nacional,Cardenales,Yankees,Cardenales,8,4
+23,5,Nacional,Bravos,Piratas,Bravos,6,5
+23,5,Nacional,Dodgers,Astros,Dodgers,5,0
+24,5,Nacional,Cardenales,Yankees,Cardenales,8,3
+24,5,Nacional,Bravos,Astros,Bravos,9,3
+24,5,Nacional,Dodgers,Piratas,Piratas,1,10
+25,5,Nacional,Cardenales,Piratas,Cardenales,5,3
+25,5,Nacional,Dodgers,Yankees,Yankees,5,7
+25,5,Nacional,Bravos,Astros,Astros,9,10
+27,5,Americana,Cardenales,Astros,Astros,6,7
+27,5,Americana,Dodgers,Piratas,Piratas,4,6
+27,5,Americana,Bravos,Yankees,Yankees,8,10
+28,5,Americana,Bravos,Piratas,Bravos,3,2
+28,5,Americana,Dodgers,Astros,Astros,3,10
+28,5,Americana,Cardenales,Yankees,Cardenales,4,3
+29,5,Americana,Dodgers,Yankees,Dodgers,2,1
+29,5,Americana,Bravos,Piratas,Piratas,9,10
+29,5,Americana,Cardenales,Astros,Astros,1,5
+31,5,Nacional,Cardenales,Yankees,Cardenales,9,5
+31,5,Nacional,Dodgers,Astros,Astros,1,10
+31,5,Nacional,Bravos,Piratas,Bravos,6,5
+1,6,Nacional,Cardenales,Yankees,Yankees,4,9
+1,6,Nacional,Bravos,Piratas,Bravos,9,4
+1,6,Nacional,Dodgers,Astros,Dodgers,7,1
+2,6,Nacional,Bravos,Yankees,Yankees,2,4
+2,6,Nacional,Cardenales,Astros,Cardenales,4,2
+2,6,Nacional,Dodgers,Piratas,Dodgers,7,2
+4,6,Americana,Dodgers,Yankees,Dodgers,5,2
+4,6,Americana,Bravos,Piratas,Bravos,6,0
+4,6,Americana,Cardenales,Astros,Cardenales,7,0
+5,6,Americana,Dodgers,Yankees,Yankees,4,10
+5,6,Americana,Cardenales,Astros,Cardenales,3,2
+5,6,Americana,Bravos,Piratas,Piratas,0,7
+6,6,Americana,Bravos,Piratas,Piratas,3,8
+6,6,Americana,Dodgers,Yankees,Yankees,0,2
+6,6,Americana,Cardenales,Astros,Astros,0,10
+8,6,Nacional,Dodgers,Astros,Astros,0,5
+8,6,Nacional,Cardenales,Piratas,Cardenales,6,1
+8,6,Nacional,Bravos,Yankees,Bravos,9,8
+9,6,Nacional,Cardenales,Astros,Astros,5,7
+9,6,Nacional,Bravos,Piratas,Piratas,1,2
+9,6,Nacional,Dodgers,Yankees,Dodgers,6,1
+10,6,Nacional,Dodgers,Yankees,Dodgers,8,6
+10,6,Nacional,Bravos,Astros,Astros,4,10
+10,6,Nacional,Cardenales,Piratas,Piratas,3,8
+12,6,Americana,Bravos,Yankees,Bravos,9,8
+12,6,Americana,Cardenales,Piratas,Cardenales,9,2
+12,6,Americana,Dodgers,Astros,Dodgers,6,3
+13,6,Americana,Cardenales,Yankees,Yankees,4,5
+13,6,Americana,Dodgers,Astros,Astros,1,9
+13,6,Americana,Bravos,Piratas,Piratas,6,8
+14,6,Americana,Cardenales,Piratas,Cardenales,3,2
+14,6,Americana,Dodgers,Yankees,Yankees,7,10
+14,6,Americana,Bravos,Astros,Astros,3,7
+16,6,Nacional,Bravos,Yankees,Yankees,1,3
+16,6,Nacional,Cardenales,Astros,Cardenales,6,3
+16,6,Nacional,Dodgers,Piratas,Dodgers,4,2
+17,6,Nacional,Dodgers,Yankees,Yankees,1,4
+17,6,Nacional,Bravos,Piratas,Bravos,9,8
+17,6,Nacional,Cardenales,Astros,Astros,2,8
+18,6,Nacional,Cardenales,Yankees,Yankees,5,9
+18,6,Nacional,Bravos,Astros,Bravos,10,2
+18,6,Nacional,Dodgers,Piratas,Dodgers,8,7
+20,6,Americana,Cardenales,Astros,Cardenales,2,1
+20,6,Americana,Dodgers,Piratas,Dodgers,10,0
+20,6,Americana,Bravos,Yankees,Yankees,3,10
+21,6,Americana,Cardenales,Astros,Astros,3,5
+21,6,Americana,Dodgers,Piratas,Piratas,0,3
+21,6,Americana,Bravos,Yankees,Bravos,4,0
+22,6,Americana,Dodgers,Piratas,Dodgers,4,0
+22,6,Americana,Bravos,Yankees,Bravos,9,5
+22,6,Americana,Cardenales,Astros,Cardenales,9,7
+24,6,Nacional,Cardenales,Astros,Cardenales,9,7
+24,6,Nacional,Bravos,Piratas,Bravos,9,7
+24,6,Nacional,Dodgers,Yankees,Yankees,4,7
+25,6,Nacional,Cardenales,Yankees,Yankees,4,8
+25,6,Nacional,Bravos,Astros,Bravos,8,5
+25,6,Nacional,Dodgers,Piratas,Piratas,0,4
+26,6,Nacional,Cardenales,Yankees,Yankees,6,10
+26,6,Nacional,Bravos,Astros,Astros,2,7
+26,6,Nacional,Dodgers,Piratas,Piratas,4,9
+28,6,Americana,Cardenales,Piratas,Cardenales,10,5
+28,6,Americana,Dodgers,Yankees,Yankees,0,4
+28,6,Americana,Bravos,Astros,Astros,0,7
+29,6,Americana,Cardenales,Yankees,Yankees,1,5
+29,6,Americana,Bravos,Astros,Bravos,2,1
+29,6,Americana,Dodgers,Piratas,Piratas,7,8
+30,6,Americana,Cardenales,Yankees,Cardenales,8,5
+30,6,Americana,Bravos,Astros,Astros,5,7
+30,6,Americana,Dodgers,Piratas,Dodgers,5,1
+2,7,Americana,Dodgers,Astros,Dodgers,10,4
+2,7,Americana,Cardenales,Piratas,Cardenales,9,4
+2,7,Americana,Bravos,Yankees,Yankees,6,8
+3,7,Americana,Bravos,Astros,Bravos,10,7
+3,7,Americana,Cardenales,Yankees,Cardenales,10,0
+3,7,Americana,Dodgers,Piratas,Dodgers,9,8
+4,7,Americana,Dodgers,Piratas,Dodgers,8,2
+4,7,Americana,Cardenales,Yankees,Cardenales,6,1
+4,7,Americana,Bravos,Astros,Astros,0,1
+6,7,Nacional,Dodgers,Yankees,Dodgers,6,4
+6,7,Nacional,Bravos,Piratas,Piratas,2,9
+6,7,Nacional,Cardenales,Astros,Cardenales,3,1
+7,7,Nacional,Bravos,Astros,Astros,0,8
+7,7,Nacional,Cardenales,Yankees,Yankees,0,2
+7,7,Nacional,Dodgers,Piratas,Piratas,7,9
+8,7,Nacional,Dodgers,Piratas,Piratas,0,3
+8,7,Nacional,Bravos,Yankees,Yankees,1,3
+8,7,Nacional,Cardenales,Astros,Astros,4,6
+10,7,Americana,Bravos,Astros,Astros,4,7
+10,7,Americana,Cardenales,Yankees,Yankees,4,7
+10,7,Americana,Dodgers,Piratas,Piratas,3,9
+11,7,Americana,Cardenales,Astros,Astros,0,7
+11,7,Americana,Dodgers,Yankees,Dodgers,10,4
+11,7,Americana,Bravos,Piratas,Bravos,8,0
+12,7,Americana,Cardenales,Astros,Astros,1,6
+12,7,Americana,Dodgers,Yankees,Dodgers,8,1
+12,7,Americana,Bravos,Piratas,Bravos,10,6
+14,7,Nacional,Cardenales,Piratas,Cardenales,10,8
+14,7,Nacional,Bravos,Yankees,Yankees,3,4
+14,7,Nacional,Dodgers,Astros,Dodgers,9,1
+15,7,Nacional,Cardenales,Yankees,Cardenales,10,1
+15,7,Nacional,Dodgers,Piratas,Piratas,5,6
+15,7,Nacional,Bravos,Astros,Bravos,10,4
+16,7,Nacional,Cardenales,Astros,Cardenales,8,1
+16,7,Nacional,Dodgers,Yankees,Dodgers,9,7
+16,7,Nacional,Bravos,Piratas,Bravos,7,1
+18,7,Americana,Cardenales,Astros,Cardenales,3,0
+18,7,Americana,Dodgers,Yankees,Dodgers,2,1
+18,7,Americana,Bravos,Piratas,Bravos,8,4
+19,7,Americana,Bravos,Astros,Bravos,6,2
+19,7,Americana,Cardenales,Yankees,Cardenales,7,6
+19,7,Americana,Dodgers,Piratas,Piratas,4,7
+20,7,Americana,Cardenales,Piratas,Cardenales,2,1
+20,7,Americana,Bravos,Astros,Bravos,8,6
+20,7,Americana,Dodgers,Yankees,Dodgers,7,6
+22,7,Nacional,Dodgers,Yankees,Yankees,2,8
+22,7,Nacional,Cardenales,Astros,Cardenales,8,2
+22,7,Nacional,Bravos,Piratas,Piratas,2,3
+23,7,Nacional,Bravos,Yankees,Bravos,9,3
+23,7,Nacional,Dodgers,Astros,Astros,4,6
+23,7,Nacional,Cardenales,Piratas,Piratas,8,9
+24,7,Nacional,Dodgers,Yankees,Yankees,5,7
+24,7,Nacional,Bravos,Astros,Astros,5,6
+24,7,Nacional,Cardenales,Piratas,Piratas,0,7
+26,7,Americana,Dodgers,Yankees,Yankees,4,7
+26,7,Americana,Bravos,Piratas,Bravos,10,0
+26,7,Americana,Cardenales,Astros,Astros,7,9
+27,7,Americana,Dodgers,Astros,Dodgers,10,8
+27,7,Americana,Cardenales,Piratas,Piratas,1,2
+27,7,Americana,Bravos,Yankees,Yankees,2,3
+28,7,Americana,Bravos,Piratas,Piratas,1,3
+28,7,Americana,Cardenales,Yankees,Cardenales,5,3
+28,7,Americana,Dodgers,Astros,Astros,0,6
+30,7,Nacional,Bravos,Piratas,Bravos,9,0
+30,7,Nacional,Cardenales,Yankees,Yankees,1,7
+30,7,Nacional,Dodgers,Astros,Astros,6,9
+31,7,Nacional,Dodgers,Yankees,Yankees,3,9
+31,7,Nacional,Bravos,Astros,Astros,0,4
+31,7,Nacional,Cardenales,Piratas,Piratas,9,10
+1,8,Nacional,Dodgers,Astros,Dodgers,9,2
+1,8,Nacional,Bravos,Piratas,Piratas,4,5
+1,8,Nacional,Cardenales,Yankees,Yankees,4,6
+3,8,Americana,Cardenales,Astros,Cardenales,7,5
+3,8,Americana,Dodgers,Piratas,Piratas,1,8
+3,8,Americana,Bravos,Yankees,Bravos,9,2
+4,8,Americana,Dodgers,Astros,Dodgers,5,0
+4,8,Americana,Cardenales,Yankees,Cardenales,5,2
+4,8,Americana,Bravos,Piratas,Bravos,8,3
+5,8,Americana,Dodgers,Piratas,Dodgers,10,5
+5,8,Americana,Bravos,Yankees,Bravos,8,7
+5,8,Americana,Cardenales,Astros,Astros,0,7
+7,8,Nacional,Cardenales,Astros,Astros,1,4
+7,8,Nacional,Bravos,Piratas,Bravos,9,0
+7,8,Nacional,Dodgers,Yankees,Dodgers,8,2
+8,8,Nacional,Dodgers,Piratas,Dodgers,5,2
+8,8,Nacional,Bravos,Yankees,Yankees,3,10
+8,8,Nacional,Cardenales,Astros,Cardenales,8,0
+9,8,Nacional,Dodgers,Yankees,Yankees,7,8
+9,8,Nacional,Bravos,Astros,Astros,9,10
+9,8,Nacional,Cardenales,Piratas,Piratas,0,8
+11,8,Americana,Dodgers,Yankees,Yankees,4,5
+11,8,Americana,Bravos,Astros,Astros,6,9
+11,8,Americana,Cardenales,Piratas,Piratas,0,1
+12,8,Americana,Dodgers,Astros,Astros,2,10
+12,8,Americana,Bravos,Yankees,Yankees,1,8
+12,8,Americana,Cardenales,Piratas,Cardenales,2,1
+13,8,Americana,Cardenales,Piratas,Piratas,1,2
+13,8,Americana,Dodgers,Yankees,Dodgers,9,2
+13,8,Americana,Bravos,Astros,Astros,2,10
+15,8,Nacional,Dodgers,Astros,Astros,0,3
+15,8,Nacional,Cardenales,Piratas,Piratas,7,8
+15,8,Nacional,Bravos,Yankees,Yankees,3,5
+16,8,Nacional,Cardenales,Piratas,Cardenales,9,5
+16,8,Nacional,Bravos,Yankees,Yankees,1,3
+16,8,Nacional,Dodgers,Astros,Dodgers,6,3
+17,8,Nacional,Dodgers,Piratas,Dodgers,8,7
+17,8,Nacional,Bravos,Yankees,Bravos,10,6
+17,8,Nacional,Cardenales,Astros,Cardenales,9,6
+19,8,Americana,Dodgers,Yankees,Yankees,3,8
+19,8,Americana,Cardenales,Piratas,Cardenales,4,2
+19,8,Americana,Bravos,Astros,Bravos,9,7
+20,8,Americana,Bravos,Yankees,Yankees,0,7
+20,8,Americana,Dodgers,Astros,Astros,2,4
+20,8,Americana,Cardenales,Piratas,Piratas,8,9
+21,8,Americana,Dodgers,Astros,Astros,2,6
+21,8,Americana,Bravos,Yankees,Bravos,4,0
+21,8,Americana,Cardenales,Piratas,Piratas,1,3
+23,8,Nacional,Dodgers,Astros,Dodgers,6,3
+23,8,Nacional,Cardenales,Piratas,Piratas,2,4
+23,8,Nacional,Bravos,Yankees,Bravos,4,0
+24,8,Nacional,Bravos,Piratas,Bravos,8,3
+24,8,Nacional,Cardenales,Astros,Astros,7,9
+24,8,Nacional,Dodgers,Yankees,Yankees,1,6
+25,8,Nacional,Bravos,Piratas,Bravos,8,1
+25,8,Nacional,Cardenales,Astros,Astros,0,2
+25,8,Nacional,Dodgers,Yankees,Dodgers,4,2
+27,8,Americana,Dodgers,Yankees,Yankees,0,10
+27,8,Americana,Bravos,Astros,Astros,2,5
+27,8,Americana,Cardenales,Piratas,Cardenales,6,1
+28,8,Americana,Cardenales,Astros,Astros,3,6
+28,8,Americana,Dodgers,Piratas,Dodgers,3,2
+28,8,Americana,Bravos,Yankees,Bravos,8,4
+29,8,Americana,Dodgers,Astros,Astros,6,8
+29,8,Americana,Cardenales,Piratas,Cardenales,10,6
+29,8,Americana,Bravos,Yankees,Yankees,7,9
+31,8,Nacional,Dodgers,Piratas,Piratas,3,9
+31,8,Nacional,Bravos,Astros,Astros,5,7
+31,8,Nacional,Cardenales,Yankees,Cardenales,8,1
+1,9,Nacional,Cardenales,Astros,Astros,6,7
+1,9,Nacional,Bravos,Piratas,Piratas,4,5
+1,9,Nacional,Dodgers,Yankees,Yankees,3,6
+2,9,Nacional,Bravos,Yankees,Yankees,0,3
+2,9,Nacional,Cardenales,Piratas,Cardenales,5,0
+2,9,Nacional,Dodgers,Astros,Dodgers,8,6
+4,9,Americana,Cardenales,Yankees,Cardenales,3,0
+4,9,Americana,Bravos,Astros,Astros,4,8
+4,9,Americana,Dodgers,Piratas,Dodgers,10,6
+5,9,Americana,Dodgers,Yankees,Dodgers,2,0
+5,9,Americana,Bravos,Piratas,Bravos,7,2
+5,9,Americana,Cardenales,Astros,Astros,2,3
+6,9,Americana,Bravos,Yankees,Yankees,5,10
+6,9,Americana,Dodgers,Piratas,Piratas,0,2
+6,9,Americana,Cardenales,Astros,Astros,0,7
+8,9,Nacional,Cardenales,Astros,Astros,5,9
+8,9,Nacional,Dodgers,Piratas,Dodgers,4,2
+8,9,Nacional,Bravos,Yankees,Bravos,6,0
+9,9,Nacional,Cardenales,Yankees,Yankees,4,8
+9,9,Nacional,Dodgers,Astros,Astros,3,10
+9,9,Nacional,Bravos,Piratas,Bravos,7,0
+10,9,Nacional,Cardenales,Yankees,Yankees,1,6
+10,9,Nacional,Bravos,Piratas,Bravos,9,7
+10,9,Nacional,Dodgers,Astros,Astros,6,10
+12,9,Americana,Bravos,Astros,Bravos,10,3
+12,9,Americana,Cardenales,Yankees,Yankees,0,7
+12,9,Americana,Dodgers,Piratas,Piratas,6,8
+13,9,Americana,Cardenales,Astros,Astros,6,7
+13,9,Americana,Bravos,Yankees,Yankees,9,10
+13,9,Americana,Dodgers,Piratas,Dodgers,10,9
+14,9,Americana,Dodgers,Astros,Dodgers,5,1
+14,9,Americana,Bravos,Yankees,Bravos,8,1
+14,9,Americana,Cardenales,Piratas,Piratas,0,3
+16,9,Nacional,Cardenales,Yankees,Yankees,3,4
+16,9,Nacional,Bravos,Piratas,Bravos,8,5
+16,9,Nacional,Dodgers,Astros,Astros,2,5
+17,9,Nacional,Dodgers,Piratas,Dodgers,10,8
+17,9,Nacional,Bravos,Yankees,Yankees,5,7
+17,9,Nacional,Cardenales,Astros,Astros,3,5
+18,9,Nacional,Bravos,Piratas,Piratas,3,9
+18,9,Nacional,Dodgers,Yankees,Dodgers,3,2
+18,9,Nacional,Cardenales,Astros,Cardenales,4,0
+20,9,Americana,Bravos,Piratas,Piratas,2,9
+20,9,Americana,Dodgers,Astros,Dodgers,8,4
+20,9,Americana,Cardenales,Yankees,Yankees,3,7
+21,9,Americana,Bravos,Yankees,Bravos,10,9
+21,9,Americana,Dodgers,Astros,Dodgers,8,4
+21,9,Americana,Cardenales,Piratas,Cardenales,9,3
+22,9,Americana,Bravos,Astros,Astros,5,10
+22,9,Americana,Cardenales,Piratas,Cardenales,10,3
+22,9,Americana,Dodgers,Yankees,Yankees,3,5
+24,9,Nacional,Bravos,Piratas,Bravos,8,2
+24,9,Nacional,Dodgers,Yankees,Yankees,1,4
+24,9,Nacional,Cardenales,Astros,Cardenales,9,2
+25,9,Nacional,Dodgers,Yankees,Yankees,2,4
+25,9,Nacional,Bravos,Astros,Bravos,8,0
+25,9,Nacional,Cardenales,Piratas,Cardenales,7,6
+26,9,Nacional,Cardenales,Yankees,Yankees,4,8
+26,9,Nacional,Bravos,Astros,Astros,8,10
+26,9,Nacional,Dodgers,Piratas,Piratas,4,7
+28,9,Americana,Cardenales,Yankees,Yankees,2,3
+28,9,Americana,Bravos,Astros,Astros,7,10
+28,9,Americana,Dodgers,Piratas,Piratas,3,4
+29,9,Americana,Dodgers,Piratas,Piratas,1,3
+29,9,Americana,Bravos,Yankees,Yankees,3,4
+29,9,Americana,Cardenales,Astros,Astros,1,8
+30,9,Americana,Bravos,Astros,Bravos,9,1
+30,9,Americana,Dodgers,Piratas,Dodgers,10,0
+30,9,Americana,Cardenales,Yankees,Cardenales,4,3
+2,10,Americana,Dodgers,Piratas,Dodgers,10,2
+2,10,Americana,Cardenales,Astros,Cardenales,10,3
+2,10,Americana,Bravos,Yankees,Yankees,6,7
+3,10,Americana,Cardenales,Astros,Cardenales,7,6
+3,10,Americana,Bravos,Piratas,Piratas,1,5
+3,10,Americana,Dodgers,Yankees,Dodgers,7,2
+4,10,Americana,Dodgers,Astros,Dodgers,5,4
+4,10,Americana,Bravos,Piratas,Bravos,2,0
+4,10,Americana,Cardenales,Yankees,Cardenales,7,6
+6,10,Nacional,Dodgers,Astros,Dodgers,4,3
+6,10,Nacional,Cardenales,Yankees,Cardenales,6,4
+6,10,Nacional,Bravos,Piratas,Bravos,7,6
+7,10,Nacional,Bravos,Astros,Astros,5,10
+7,10,Nacional,Cardenales,Yankees,Cardenales,6,2
+7,10,Nacional,Dodgers,Piratas,Piratas,0,6
+8,10,Nacional,Cardenales,Piratas,Piratas,1,5
+8,10,Nacional,Bravos,Yankees,Yankees,5,10
+8,10,Nacional,Dodgers,Astros,Dodgers,6,3
+10,10,Americana,Dodgers,Piratas,Dodgers,9,8
+10,10,Americana,Bravos,Astros,Astros,1,9
+10,10,Americana,Cardenales,Yankees,Cardenales,6,5
+11,10,Americana,Bravos,Astros,Astros,2,10
+11,10,Americana,Cardenales,Yankees,Cardenales,2,1
+11,10,Americana,Dodgers,Piratas,Dodgers,7,4
+12,10,Americana,Bravos,Piratas,Bravos,7,4
+12,10,Americana,Cardenales,Yankees,Cardenales,9,0
+12,10,Americana,Dodgers,Astros,Astros,6,10
+14,10,Nacional,Bravos,Astros,Bravos,10,2
+14,10,Nacional,Cardenales,Yankees,Cardenales,4,3
+14,10,Nacional,Dodgers,Piratas,Piratas,3,10
+15,10,Nacional,Bravos,Piratas,Bravos,1,0
+15,10,Nacional,Cardenales,Astros,Cardenales,7,2
+15,10,Nacional,Dodgers,Yankees,Yankees,0,6
+16,10,Nacional,Bravos,Astros,Bravos,10,6
+16,10,Nacional,Dodgers,Yankees,Yankees,5,6
+16,10,Nacional,Cardenales,Piratas,Piratas,2,9
+18,10,Americana,Dodgers,Yankees,Yankees,1,7
+18,10,Americana,Bravos,Piratas,Bravos,6,0
+18,10,Americana,Cardenales,Astros,Astros,0,2
+19,10,Americana,Cardenales,Astros,Cardenales,3,0
+19,10,Americana,Dodgers,Piratas,Dodgers,9,6
+19,10,Americana,Bravos,Yankees,Yankees,4,10
+20,10,Americana,Bravos,Piratas,Bravos,3,0
+20,10,Americana,Dodgers,Astros,Dodgers,9,5
+20,10,Americana,Cardenales,Yankees,Cardenales,3,2
+22,10,Nacional,Bravos,Yankees,Yankees,1,7
+22,10,Nacional,Cardenales,Astros,Cardenales,9,1
+22,10,Nacional,Dodgers,Piratas,Dodgers,7,6
+23,10,Nacional,Bravos,Piratas,Piratas,8,10
+23,10,Nacional,Dodgers,Astros,Dodgers,4,3
 23,10,Nacional,Cardenales,Yankees,Cardenales,8,7
-23,10,Nacional,Cachorros,Astros,Cachorros,9,6
-24,10,Nacional,Cardenales,Yankees,Yankees,1,2
-24,10,Nacional,Dodgers,Cerveceros,Cerveceros,6,8
-24,10,Nacional,Cachorros,Piratas,Cachorros,2,0
-24,10,Nacional,Bravos,'Medias rojas','Medias rojas',0,6
-24,10,Nacional,Gigantes,Astros,Astros,3,4
-26,10,Americana,Dodgers,Cerveceros,Cerveceros,1,3
-26,10,Americana,Bravos,'Medias rojas','Medias rojas',0,2
-26,10,Americana,Cachorros,Yankees,Cachorros,8,3
-26,10,Americana,Gigantes,Astros,Gigantes,9,2
-26,10,Americana,Cardenales,Piratas,Cardenales,9,1
-27,10,Americana,Dodgers,Astros,Astros,0,5
-27,10,Americana,Cardenales,'Medias rojas','Medias rojas',1,4
-27,10,Americana,Gigantes,Cerveceros,Gigantes,6,5
-27,10,Americana,Cachorros,Yankees,Cachorros,9,6
-27,10,Americana,Bravos,Piratas,Piratas,1,8
-28,10,Americana,Cardenales,'Medias rojas',Cardenales,8,4
-28,10,Americana,Dodgers,Piratas,Dodgers,10,6
-28,10,Americana,Gigantes,Cerveceros,Gigantes,8,0
-28,10,Americana,Bravos,Yankees,Yankees,2,10
-28,10,Americana,Cachorros,Astros,Cachorros,1,0
-30,10,Nacional,Cachorros,Cerveceros,Cerveceros,0,8
-30,10,Nacional,Gigantes,'Medias rojas','Medias rojas',6,7
-30,10,Nacional,Cardenales,Piratas,Piratas,1,2
-30,10,Nacional,Dodgers,Astros,Astros,8,9
-30,10,Nacional,Bravos,Yankees,Bravos,6,4
-31,10,Nacional,Cardenales,Piratas,Piratas,2,6
-31,10,Nacional,Bravos,'Medias rojas',Bravos,7,1
-31,10,Nacional,Gigantes,Astros,Astros,1,5
-31,10,Nacional,Cachorros,Yankees,Cachorros,2,1
-31,10,Nacional,Dodgers,Cerveceros,Cerveceros,3,8
+24,10,Nacional,Bravos,Astros,Astros,5,6
+24,10,Nacional,Dodgers,Yankees,Yankees,8,9
+24,10,Nacional,Cardenales,Piratas,Cardenales,10,0
+26,10,Americana,Cardenales,Astros,Astros,2,6
+26,10,Americana,Dodgers,Piratas,Piratas,3,5
+26,10,Americana,Bravos,Yankees,Yankees,0,10
+27,10,Americana,Cardenales,Yankees,Cardenales,2,1
+27,10,Americana,Dodgers,Astros,Astros,3,6
+27,10,Americana,Bravos,Piratas,Piratas,2,8
+28,10,Americana,Dodgers,Piratas,Dodgers,7,1
+28,10,Americana,Bravos,Astros,Astros,0,10
+28,10,Americana,Cardenales,Yankees,Cardenales,5,3
+30,10,Nacional,Dodgers,Astros,Astros,5,10
+30,10,Nacional,Cardenales,Yankees,Cardenales,4,1
+30,10,Nacional,Bravos,Piratas,Bravos,10,4
+31,10,Nacional,Dodgers,Piratas,Dodgers,10,8
+31,10,Nacional,Bravos,Astros,Bravos,9,6
+31,10,Nacional,Cardenales,Yankees,Yankees,0,3
